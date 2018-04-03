@@ -1,0 +1,508 @@
+﻿/*Основное */
+.margin25 {
+	margin-top: 25px;
+}
+/*Основное*/
+
+/*Заголовок и соц сети*/
+.practic-centr .catalog__header {
+	margin-bottom: 20px;
+	position: relative;
+}
+.header-social-links {
+	float: right;
+	position: relative;
+}
+.header-social-links a {
+	display: inline-block;
+	margin-right: 5px;
+	position: relative;
+}
+.header-social-links a:hover:after,
+.header-social-links a:hover:before,
+.header-social-links a:active:after,
+.header-social-links a:active:before {
+	width: 50%;
+}
+.header-social-links a:after {
+	left: 50%;
+}
+.header-social-links a:before {
+	right: 50%;
+}
+.header-social-links a:after,
+.header-social-links a:before {
+	border-bottom: 3px solid #000;
+	bottom: -10px;
+	content: "";
+	position: absolute;
+	width: 0;
+	transition: width 250ms ease-out 0s;
+	-o-transition: width 250ms ease-out 0s;
+	-ms-transition: width 250ms ease-out 0s;
+	-moz-transition: width 250ms ease-out 0s;
+	-webkit-transition: width 250ms ease-out 0s;
+}
+/*Заголовок и соц сети*/
+/*Слайдер*/
+.practic-centr .index-slider {
+/*	height: 380px;*/
+height: auto;
+	margin-top: -45px;
+}
+.practic-centr .index-slider__prev,
+.practic-centr .index-slider__next {
+top:50%!important;
+}
+.practic-centr .index-slider__title {
+	font-size: 34px;
+	margin-bottom: 10px;
+	font-weight: 700;
+	width: 70%;
+	text-transform: uppercase;
+}
+.practic-centr .index-slider__text {
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+.index-slider:hover .index-slider__next, .index-slider:hover .index-slider__prev {cursor: pointer;}
+/*Слайдер*/
+/* Блок ближайшие расписания*/
+.schedule-near .about-reviews-box {
+	margin-right: -1.166%;
+	margin-left: -1.166%;
+}
+.schedule-near .review {
+	position: relative;
+}
+.schedule-near .review__data {
+	color: #fff;
+	font-weight: 700;
+	position: absolute;
+	top: 150px;
+	right: 15px;
+	background: #96bf30;
+	padding: 3px 8px;
+	border-radius: 5px;
+	font-size: 17px;
+}
+.schedule-near .review__lector{
+	color: #2a2f30;
+	margin-top: 10px;
+}
+.schedule-near .review__lector span{
+	color: #777977;
+}
+.schedule-near .review__name {
+	text-transform: uppercase;
+	color: #2a2f30;
+}
+.schedule-near .review__box {
+	height: 110px;
+}
+.index-slider__prev,
+.index-slider__next {
+	top: 45px!important;
+}
+/* Блок ближайшие расписания*/
+
+/*Блок о нас*/
+.about-us-block {
+	position: relative;
+	margin-top: 38px;
+}
+.about-us-block p {
+	line-height: 26px;
+}
+.about-us-block-title {
+	font-size: 46px;
+	font-weight: 500;
+	line-height: 34px;
+	margin-bottom: 25px;
+	color: #2a2f30;
+}
+.about-us-block .statistic {
+	position: absolute;
+	height: 65px;
+	bottom: 0;
+	left: 15px;
+	right: 15px;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.6);
+	color: #2a2f30;
+}
+.about-us-block .img-statistic img{
+	width: 100%;
+}
+.about-us-block .statistic-item {
+	line-height: 65px;
+}
+.about-us-block .text {
+	line-height: 16px;
+	padding: 16px 0;
+}
+.about-us-block .number {
+	font-size: 40px;
+	float: left;
+	margin-right: 5px;
+}
+/*Блок о нас*/
+
+/*Консультанты*/
+.consultant:hover {
+	text-decoration: none!important;
+}
+.consultant .consultant__name:hover{
+	text-decoration: underline;
+}
+/*Консультанты*/
+/*Клинические случаи*/
+.clinic_moment {
+	background: transparent!important;
+}
+/*Клинические случаи*/
+
+/*Курсы*/
+.lesson-item-new {
+	padding: 25px 25px 30px 25px!important;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(51,51,51,0.1);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(51,51,51,0.1);
+	box-shadow: 0px 0px 10px 2px rgba(51,51,51,0.1);
+	position: relative;
+}
+
+.lesson-item-new .lesson-item__date{
+	color: #96bf30;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #f6f6f6;
+	padding: 0 25px 0 12px;
+	display: inline-block;
+	position: relative;
+	line-height: 31px;
+	margin-left: -10px;
+}
+.lesson-item-new .lesson-item__date:after {
+	content: '';
+	width: 0;
+	height: 0;
+	top: 0;
+	right: -25px;
+	display: inline-block;
+	position: absolute;
+	border-top: 31px solid #f5f5f5;
+	border-right: 25px solid transparent;
+}
+.lesson-item-new .lesson-item__title{
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.lesson-item-new .lesson-item__description{
+	font-size: 18px;
+	margin-bottom: 10px;
+
+}
+.lesson-item-new .lesson-item__place{
+	font-size: 18px;
+}
+.lesson-item-new .lesson-item__time span,
+.lesson-item-new .lesson-item__place span {
+	font-weight: bold;
+}
+.lesson-item-new .lesson-item__time{
+	font-size: 18px;
+}
+
+.cource-filter .bx-filter-section{
+	background: #f6f6f6!important;
+	padding: 0 15px;
+	border-bottom: 3px solid #96bf30;
+	border-top: 3px solid #96bf30;
+}
+.cource-filter .bx-filter-parameters-box-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #2a2f30;
+}
+.cource-filter .bx-filter-parameters-box-title span{
+	color: #2a2f30!important;
+}
+.cource-filter input[type="submit"] {    
+	padding: 15px 0;
+	float: none;
+	border: 2px solid #96bf30;
+	margin: 15px auto;
+}
+input[type="submit"].btn-green{
+	background: #96bf30;
+	box-shadow: none;
+}
+.lesson-item__lector {
+	margin-top: 15px;
+}
+.consultant__avatar_mini {
+	width: 72px!important;
+	height: 72px!important;	
+	margin-bottom: 0!important;
+}
+.consultant__name_mini {
+	color: #333!important;
+	font-size: 18px!important;
+	margin-top: 25px!important;
+	margin-bottom: -6px!important;
+}
+.lesson-item__btn {
+	position: absolute;
+	right: 25px;
+	bottom: 30px;
+}
+.consultant_item {
+	width: 50%;
+	float: left;
+}
+.lesson-item .consultant_item {
+	margin-top: 10px;
+}
+.detail-main-help,
+.detail-table-item {
+	line-height: 30px;
+	font-size: 18px;
+}
+.detail-table-benefit span,
+.detail-table-price span{
+	color: #96BF30;
+}
+.detail-main-help span{
+	font-weight: bold;
+}
+.sidebar-detail-lector {
+	margin-top: 45px;
+}
+.sidebar-galery-title,
+.sidebar-lector-title {
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.sidebar-detail-lector .consultant_item {
+	width: 100%;
+	margin-bottom: 25px;
+}
+.sidebar-detail-lector .consultant__name_mini {
+	color: #96BF30!important;
+}
+.cours__read_more .btn-green-border {
+	margin-left: 40px;
+}
+.main-detail-title {
+	position: relative;
+	font-size: 30px;
+	margin-bottom: 20px;
+} 
+.all-courses-link {
+	margin-bottom: 10px;
+}
+.all-courses-link a{
+	font-size: 18px;
+	font-weight: bold;
+	color: #2a2f30;
+}
+.all-courses-link a:hover {
+	color: #96bf30;
+}
+.lesson-item__table-item-text {
+    padding-right: 155px;
+}
+/*фильтрв курсах*/
+.block-filter {width: 275px;float: left;padding: 0 15px;}
+.bx-filter-parameters-box-container-block .checkbox:nth-child(1),
+.bx-filter-parameters-box-container-block .radio:nth-child(1) {
+	display: none;
+}
+.courses-list {
+	width: calc(100% - 275px);
+	float: right;
+	padding: 0 15px;
+}
+.block-filter label > span {
+	font-size: 16px;
+}
+.block-filter .bx-filter-parameters-box-title {
+	position: relative;
+	padding: 14px 15px;
+}
+.block-filter i {
+	color: #3f3f3f;
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	font-size: 26px;
+	line-height: 53px;
+}
+.block-filter .radio {
+	padding: 0 15px;
+}
+.block-filter .radio input[type="radio"]{
+	opacity: 0;
+	position: absolute;
+	top: -3px;
+	left: 36px;
+	width: 20px;
+	height: 20px;
+	z-index: 99;
+	cursor: pointer;
+}
+.block-filter .radio label {
+	padding: 0;
+}
+.block-filter .radio label label{
+	width: 20px;
+	height: 20px;
+	float: left;
+	border-radius: 50%;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	margin-right: 10px;
+}
+
+.block-filter .radio label.cyan{border:2px solid #96bf30;}
+
+.block-filter input[type="radio"]:checked+label{
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+.block-filter input[type="radio"]:checked+label:before {
+	content: "";
+	position: absolute;
+	background: #96bf30;
+	border-radius: 50%;
+	height: 8px;
+	width: 8px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.block-filter .checkbox {
+	opacity: 1;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 10px 0px 10px 20px;
+}
+a.switch-btn {
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 52px;
+	z-index: 0;
+}
+a.switch-btn.open .fa{
+	-moz-transform: rotate(180deg); /* Для Firefox */
+	-ms-transform: rotate(180deg); /* Для IE */
+	-webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+	-o-transform: rotate(180deg); /* Для Opera */
+	transform: rotate(180deg);
+}
+
+.block-filter .bx-filter-parameters-box-container {
+	padding: 0;
+}
+.block-filter .bx-filter-parameters-box {
+	padding: 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+.block-filter .bx-filter-section>.row {
+	padding: 0;
+}
+.bx-filter-block {
+	/*display: none;*/
+	padding-top: 5px;
+}
+
+/*фильтрв курсах*/
+/*Курсы*/
+
+/*Галерея*/
+.catalog {
+	background: transparent!important;
+}
+/*Галерея на странице курсов*/
+.sidebar-detail-galery .row {
+	margin: 0 -5px;
+	height: 270px;
+	overflow: hidden;
+}
+.sidebar-detail-galery .col-sm-6 {
+	padding: 0 5px;
+}
+.sidebar-detail-galery .crop {
+	margin-bottom: 10px;
+}
+.sidebar-detail-galery .col-xs-12 {
+	display: none;
+}
+.sidebar-detail-galery .col-xs-12:nth-child(1),
+.sidebar-detail-galery .col-xs-12:nth-child(2),
+.sidebar-detail-galery .col-xs-12:nth-child(3),
+.sidebar-detail-galery .col-xs-12:nth-child(4) {
+	display: block;
+}
+.crop a {
+	width: 100%;
+}
+.crop a img {
+	width: 100%;	
+	height: 125px;
+	object-fit:cover;
+}
+.sidebar-detail-galery .btn-green-border {
+	margin-left: 5px;
+	margin-top: 25px;
+}
+/*Галерея*/
+
+/*Меню*/
+.menu__items-box ul {
+	display: none;
+}
+.menu__items-box ul .menu__item-text {
+	font-size: 16px;
+}
+.menu__items-box ul .menu__item {
+	padding: 10px 0 10px 34px;
+}
+.sub-menu {
+	position: relative;
+}
+.toggle-submenu {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 25px 20px;
+	line-height: 61px;
+	display: none;
+}
+.toggle-submenu img {
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+.toggle-submenu.open img{
+	-moz-transform: scale(1, -1);
+	-ms-transform: scale(1, -1);
+	-webkit-transform: scale(1, -1);
+	-o-transform: scale(1, -1);
+	transform: scale(1, -1);
+}
+/*Меню*/

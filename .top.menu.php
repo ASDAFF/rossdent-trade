@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О компании", 
+		"/about/", 
+		Array(), 
+		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-1.png"), 
+		"" 
+	),
+	Array(
+		"Информация", 
+		"/news/", 
+		Array(), 
+		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-7.png"), 
+		"" 
+	),
+	Array(
+		"Сервис", 
+		"/service/",
+		Array(), 
+		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-3.png"), 
+		"" 
+	),
+	Array(
+		"Каталог", 
+		"/catalog/implant-bonetrust?first-menu-mobile=y", 
+		Array(), 
+		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-2.png"), 
+		"" 
+	),
+	Array(
+		"Практик-Центр", 
+		"/practic-centr/", 
+		Array(), 
+		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-4.png"), 
+		"" 
+	),
+	Array(
+		"Фрезерный центр", 
+		"http://www.rossdent.ru/zubotehnicheskaya-laboratoriya/", 
+		Array(), 
+		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-5.png"), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-8.png"), 
+		"" 
+	)
+);
+?>

@@ -1,0 +1,33 @@
+div.news-detail
+{
+	word-wrap: break-word;
+}
+div.news-detail img.detail_picture
+{
+	float:left;
+	margin:0 8px 6px 1px;
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	object-fit: contain;
+}
+.news-date-time
+{
+	color:#486DAA;
+}
+.news-detail .col-sm-3 {
+	max-width: 200px;
+}
+.lector-name {
+	font-size: 46px;
+	margin-bottom: 10px;
+}
+.lector-prof {
+	margin-bottom: 20px;
+	color: #777979;
+}
+.lector-description {
+	margin-bottom: 30px;
+	font-size: 18px;
+	line-height: 25px;
+}

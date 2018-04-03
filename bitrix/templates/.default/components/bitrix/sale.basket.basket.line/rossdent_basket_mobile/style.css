@@ -1,0 +1,45 @@
+
+.basket-mobile{
+    display: none;
+}
+
+@media (max-width: 1300px){
+
+    .basket-mobile{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        height: 50px;
+    }
+
+    .basket-mobile .cart-item__text-box{
+        display: flex;
+    }
+
+    .basket-mobile .menu__cart{
+        padding: 0px;
+    }
+    .basket-mobile .cart-item{
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .basket-mobile .cart-item__cart{
+        background-size: contain;
+        width: 25px;
+        height: 25px;
+
+    }
+
+    .basket-mobile .cart-item__white-text:after{
+        display: inline-block;
+        content: "-";
+        padding: 0px 5px;
+    }
+
+
+
+}

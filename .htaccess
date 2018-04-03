@@ -1,0 +1,65 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+  php_flag session.use_trans_sid off
+  php_value display_errors 1
+  php_value mbstring.internal_encoding UTF-8
+  php_value mbstring.func_overload 2
+  php_value max_input_vars 10000
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  
+
+  #################################################
+  
+	RewriteEngine On
+  	RewriteCond %{HTTP_HOST} ^www.rossdent-trade\.ru$ [NC]
+	RewriteRule ^(.*)$ https://rossdent-trade.ru/$1 [R=301,L]
+  
+	
+	RewriteCond %{REQUEST_URI} ^(.*)/{2,}(.*)$
+	RewriteRule (.*) %1/%2 [R=301,L] 
+	
+	
+	RewriteEngine On
+	#HTTP_X_FORWARDED_PROTO
+	RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+	RewriteCond %{REQUEST_URI} !^/bitrix/admin/1c_exchange.php$ [NC]
+	RewriteRule ^(.*)$ https://rossdent-trade.ru/$1 [R=301,L]
+	
+  #################################################
+	
+
+	
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+
+
+# сжатие text, html, javascript, css, xml:
+<ifModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+</ifModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"  
+</IfModule>
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml

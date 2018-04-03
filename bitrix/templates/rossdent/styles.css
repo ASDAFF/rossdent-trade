@@ -1,0 +1,41 @@
+/*Меню*/
+.menu__items-box ul {
+	display: none;
+}
+.menu__items-box ul .menu__item-text {
+	font-size: 16px;
+}
+.menu__items-box ul .menu__item {
+	padding: 10px 0 10px 34px;
+}
+.sub-menu {
+	position: relative;
+}
+.toggle-submenu {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 25px 20px;
+	line-height: 61px;
+	display: none;
+}
+.toggle-submenu img {
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+.toggle-submenu.open img{
+	-moz-transform: scale(1, -1);
+	-ms-transform: scale(1, -1);
+	-webkit-transform: scale(1, -1);
+	-o-transform: scale(1, -1);
+	transform: scale(1, -1);
+}
+@media (max-width: 992px) {
+	.toggle-submenu {
+		display: block;
+	}
+}
+/*Меню*/

@@ -1,0 +1,132 @@
+.f-form{
+    display: none;
+}
+
+.mf-name .mf-text{
+    float: left;
+    width: 30%;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+.mf-name-textarea .mf-textarea{
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.mf-name-textarea textarea{
+    border: 1px solid;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.mf-name .mf-text span{
+    color: red;
+}
+
+.mf-name.mb{
+    margin-bottom: 20px;
+}
+
+.mf-name input[type="text"],
+.mf-name select
+{
+    border-bottom: 1px solid #000000;
+    float: left;
+    width: 70%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 100;
+    background: transparent;
+}
+
+.mf-name:after{
+    display: table-cell;
+    content: "";
+    clear: both;
+}
+
+.mf-name{
+    display: block;
+    height: 50px;
+    width: 560px;
+}
+
+.mf-rule{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #939696;
+    margin-bottom: 30px;
+}
+
+input[type="submit"]{
+    background-color: #96bf30!important;
+    width: 160px;
+    height: 60px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.select-arrow {
+    position: relative;
+}
+.select-arrow:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    z-index: -1;
+    background-image: url(/images/icons/arrow-down.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+select {
+    padding-right: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.f-req-text{
+    float: right;
+    max-width: 250px;
+}
+
+@media (max-width: 900px) {
+    .f-req-text{
+        float: unset;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .mf-name .mf-text{
+        width: 100%;
+    }
+
+    .mf-name input[type="text"],
+    .mf-name select
+    {
+        width: 100%;
+    }
+
+    .select-arrow:after{
+        position: unset;
+    }
+
+}
+
+.mf-ok-text{
+	margin: 30px;
+    color: #96bf30;
+    font-size: 20px;	
+}

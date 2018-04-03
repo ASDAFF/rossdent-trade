@@ -1,0 +1,21 @@
+.dent_info_message {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 0 25px;
+    font-size: 24px;
+}
+@media (max-width: 768px) {
+	.news-text__wrapper img {
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+	.blog-text td {
+		display: block;
+	}
+.blog-text img {
+    height: auto;
+}
+.blog-text table {
+width: 100%;}
+}

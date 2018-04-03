@@ -1,0 +1,8 @@
+.lesson > a{
+    text-decoration: none;
+
+}
+
+.lesson > a div.btn-green{
+    width: 340px;
+}

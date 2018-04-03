@@ -1,0 +1,1 @@
+/home/r/rossdent/trade/public_html/bitrix/modules/sale/install/components/bitrix/sale.personal.order/templates/.default/bitrix//home/r/rossdent/trade/public_html/bitrix/components/bitrix/sale.personal.order/templates/.default/bitrix/

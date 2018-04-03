@@ -1,0 +1,11 @@
+Array
+(
+    [name] => 4.jpg
+    [type] => image/jpeg
+    [tmp_name] => /home/r/rossdent/trade/public_html/upload/tmp/BXTEMP-2017-09-14/20/bxu/main/0c24c1bebeda15c794e3c6877f317df7/file1505367444386/default
+    [size] => 12648946
+    [error] => 0
+    [MODULE_ID] => iblock
+    [description] => 
+    [ORIGINAL_NAME] => 4.jpg
+)

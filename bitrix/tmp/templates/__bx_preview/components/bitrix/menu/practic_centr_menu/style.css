@@ -1,0 +1,102 @@
+/* Left menu*/
+ul.left-menu
+{
+	list-style:none;
+	margin:0; padding:0;
+	margin-bottom:8px;
+	position: relative; /*IE bug*/
+}
+
+ul.left-menu li
+{
+	padding: 10px 16px;
+	background:#F5F5F5 url(images/left_menu_bg.gif) top repeat-x;
+}
+
+ul.left-menu li a
+{
+	font-size:100%;
+	color:#BC262C;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.left-menu li a:visited
+{
+	color:#BC262C;
+}
+
+ul.left-menu li a:hover
+{
+	color:#BC262C;
+}
+
+
+ul.left-menu li a.selected:link,
+ul.left-menu li a.selected:visited,
+ul.left-menu li a.selected:active,
+ul.left-menu li a.selected:hover
+{
+	color:#FC8D3D;
+}
+.content-menu {
+	background: #96bf30;
+	height: 60px;
+	margin-bottom: 45px;
+}
+.content-menu ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+.content-menu li {
+	display: block;
+	text-align: center;
+	margin: 0;
+	list-style: none;
+	padding: 0 50px;
+}
+.content-menu ul a {
+    padding: 18px 0 20px;
+    color: #fff;
+    line-height: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+.content-menu a.selected,
+.content-menu a:hover {
+	color: #000;
+}
+.content-menu ul > li a:hover:before, 
+.content-menu ul > li a:hover:after, 
+.content-menu ul > li a.active:before, 
+.content-menu ul > li a.active:after, 
+.content-menu ul > li a.selected:before, 
+.content-menu ul > li a.selected:after,
+.content-menu ul > li a:hover:before, 
+.content-menu ul > li a:hover:after {
+    width: 50%;
+}
+.content-menu ul > li a:after {
+    left: 50%;
+}
+.content-menu ul > li a:before {
+    right: 50%;
+}
+.content-menu ul > li a:before, 
+.content-menu ul > li a:after {
+    border-bottom: 6px solid #000;
+    bottom: 0px;
+    content: "";
+    position: absolute;
+    width: 0;
+    transition: width 250ms ease-out 0s;
+    -o-transition: width 250ms ease-out 0s;
+    -ms-transition: width 250ms ease-out 0s;
+    -moz-transition: width 250ms ease-out 0s;
+    -webkit-transition: width 250ms ease-out 0s;
+}

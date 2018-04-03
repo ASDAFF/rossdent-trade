@@ -1,0 +1,164 @@
+#nav {
+    overflow: hidden;
+    height: 25px;
+}
+
+#nav li {
+    float: left;
+    list-style: none;
+}
+
+#nav li a,
+#nav li span {
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 20px;
+    line-height: 25px;
+}
+#nav li.more {
+    width: 4em;
+    text-align: center;
+    display: none;
+}
+
+#nav li.more:hover ul#overflow {
+    opacity: 1;
+    visibility: visible;
+    background: #FFF;
+    padding: 20px;
+    border: 1px solid #DADADA;
+}
+
+#nav #overflow {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    margin-top: 15px;
+}
+#nav #overflow:after, #nav #overflow:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#nav #overflow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 15px;
+    margin-left: -15px;
+}
+#nav #overflow:before {
+    border-color: rgba(218, 218, 218, 0);
+    border-bottom-color: #dadada;
+    border-width: 16px;
+    margin-left: -16px;
+}
+
+#nav #overflow li { float: none; }
+
+#nav #overflow li a {
+    white-space: nowrap;
+    margin-right: 0px;
+}
+
+#nav li span img{
+    display: inline-block;
+}
+
+#nav li a:hover{
+    border-bottom: 3px solid #96bf30;
+}
+
+
+.number-phone-top ul img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.number-phone-top ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+}
+
+.number-phone-top li{
+    margin-right: 20px;
+}
+
+
+.number-phone-top a{
+    text-decoration: none;
+    color: #2a2f30;
+    white-space: nowrap;
+}
+
+.number-phone-top .mobile-number{
+    display: none;
+}
+
+.top-slogan{
+    margin-right: 20px;
+    width: 100%;
+}
+
+@media (max-width: 1100px){
+    .top-slogan{
+        display: none;
+    }
+}
+
+@media (max-width: 560px){
+
+    .number-phone-top ul{
+        display: none;
+    }
+    .number-phone-top .mobile-number{
+        margin-right: 20px;
+        display: block;
+        cursor: pointer;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .number-phone-top .mobile-number img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .number-phone-top.active ul{
+        display: block;
+        position: absolute;
+        margin: 5px -10px;
+        background: #FFF;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .menu__items_top-box{
+        display: none;
+    }
+    .search-form.input-group input[type="text"]{
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 400px){
+    .number-phone-top, .user__green{
+        font-size: 12px!important;
+        font-weight: 700;
+        line-height: 25px;
+    }
+
+}

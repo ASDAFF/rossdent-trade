@@ -1,0 +1,12 @@
+.dent_info_message {
+	max-width: 1200px;
+	margin: 30px auto 0;
+	padding: 0 25px;
+	font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+.lesson-item__table-item-text {
+    padding-right: auto;
+}
+}
