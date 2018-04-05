@@ -246,6 +246,7 @@ input[type="submit"].btn-green{
 	width: 72px!important;
 	height: 72px!important;	
 	margin-bottom: 0!important;
+	margin: 0 auto;
 }
 .consultant__name_mini {
 	color: #333!important;
@@ -259,11 +260,11 @@ input[type="submit"].btn-green{
 	bottom: 30px;
 }
 .consultant_item {
-	width: 50%;
 	float: left;
 }
 .lesson-item .consultant_item {
 	margin-top: 10px;
+	margin-right: 20px;
 }
 .detail-main-help,
 .detail-table-item {

@@ -190,4 +190,7 @@ input[disabled]{
 }
 
 
+.clear{
+	clear: both;
+}
 
