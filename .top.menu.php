@@ -23,7 +23,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Каталог", 
-		"/catalog/implant-bonetrust?first-menu-mobile=y", 
+		"/catalog/?first-menu-mobile=y",
 		Array(), 
 		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-2.png"), 
 		"" 

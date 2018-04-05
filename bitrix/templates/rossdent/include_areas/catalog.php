@@ -17,8 +17,6 @@ $aMenuLinksExt = $APPLICATION->IncludeComponent(
 );
 $arResult = $aMenuLinksExt;
 ?>
-
-
 <section class="catalog">
     <div class="box">
         <hr class="catalog__hr">
@@ -108,3 +106,5 @@ $arResult = $aMenuLinksExt;
         </div>
     </div>
 </section>
+
+

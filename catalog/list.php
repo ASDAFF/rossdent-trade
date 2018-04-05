@@ -16,7 +16,8 @@ $APPLICATION->IncludeComponent(
         "AREA_FILE_SUFFIX" => "inc",
         "COMPONENT_TEMPLATE" => ".default",
         "EDIT_TEMPLATE" => "",
-        "PATH" => "/bitrix/templates/rossdent/include_areas/catalog.php"
+        //"PATH" => "/bitrix/templates/rossdent/include_areas/catalog.php"
+        "PATH" => "/bitrix/templates/rossdent/include_areas/catalog-new.php"
     )
 );
 
@@ -133,7 +134,7 @@ if ($show) {
 <section id='catalog-view' class="catalog-view">
     <div class="box">
         <div class="catalog-view__header">
-            <?= $sectionTitle ?>
+            <?//= $sectionTitle ?>
             <div>
                 <a href="?sort=<?= $filterSort ?>&order=<?= $filterOrder ?>&limit=6"
                    class="catalog-view__filter <?= ($limit == 6) ? 'catalog-view__filter--active' : '' ?>">по 6</a>
