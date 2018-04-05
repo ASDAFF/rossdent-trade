@@ -32,7 +32,7 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->IncludeComponent(
 		"ELEMENT_CODE" => $_REQUEST["ELEMENT_CODE"],
 		"ELEMENT_ID" => $_REQUEST["ELEMENT_ID"],
 		"HIDE_NOT_AVAILABLE" => "N",
-		"IBLOCK_ID" => "16",
+		"IBLOCK_ID" => CATALOG_ID,
 		"IBLOCK_TYPE" => "catalog",
 		"LABEL_PROP" => "-",
 		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",

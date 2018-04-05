@@ -4,7 +4,7 @@ $APPLICATION->IncludeComponent(
     "top.new.catalog",
     array(
         "IBLOCK_TYPE" => "catalog",
-        "IBLOCK_ID" => 16,
+        "IBLOCK_ID" => CATALOG_ID,
         "SECTION_ID" => "",
         "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
         "CACHE_TYPE" => "A",

@@ -32,7 +32,7 @@ if (isset($_GET["SECTION_ID"])) {
 
     $sections = CIBlockSection::GetList(
         Array("SORT" => "ASC"),
-        Array("IBLOCK_ID" => 16, "ACTIVE" => "Y"),
+        Array("IBLOCK_ID" => CATALOG_ID, "ACTIVE" => "Y"),
         false,
         Array(),
         false);
@@ -90,7 +90,7 @@ $APPLICATION->IncludeComponent(
         "ELEMENT_SORT_ORDER2" => "desc",
         "FILTER_NAME" => "arrFilter",
         "HIDE_NOT_AVAILABLE" => "N",
-        "IBLOCK_ID" => "16",
+        "IBLOCK_ID" => CATALOG_ID,
         "IBLOCK_TYPE" => "catalog",
         "INCLUDE_SUBSECTIONS" => "Y",
         "LABEL_PROP" => "-",

@@ -35,7 +35,7 @@ $APPLICATION->IncludeComponent(
 		"ELEMENT_SORT_ORDER2" => "desc",
 		"FILTER_NAME" => "arrFilter",
 		"HIDE_NOT_AVAILABLE" => "N",
-		"IBLOCK_ID" => "16",
+		"IBLOCK_ID" => CATALOG_ID,
 		"IBLOCK_TYPE" => "catalog",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"LABEL_PROP" => "-",

@@ -9,6 +9,7 @@ function FunctionName(params)
 }
 */
 
+define("CATALOG_ID", 30);
 
 function GetRateFromCBR($CURRENCY)
       {

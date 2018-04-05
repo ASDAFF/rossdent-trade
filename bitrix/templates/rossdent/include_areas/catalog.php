@@ -7,7 +7,7 @@ $aMenuLinksExt = $APPLICATION->IncludeComponent(
         "CACHE_TIME" => "36000000",
         "CACHE_TYPE" => "A",
         "DEPTH_LEVEL" => "8",
-        "IBLOCK_ID" => "16",
+        "IBLOCK_ID" => CATALOG_ID,
         "IBLOCK_TYPE" => "catalog",
         "IS_SEF" => "Y",
     		"SECTION_PAGE_URL" => "/#SECTION_CODE#",
@@ -31,7 +31,7 @@ $arResult = $aMenuLinksExt;
             // Формируем меню
             $arLayerElement = array();
             $empryLevel = array();
-            $sectionItems = CIBlockSection::GetList(Array(), Array("IBLOCK_ID" => 16), true, Array("UF_LINK"));
+            $sectionItems = CIBlockSection::GetList(Array(), Array("IBLOCK_ID" => CATALOG_ID), true, Array("UF_LINK"));
             while($sectionItem = $sectionItems->GetNext()) {
               if ($sectionItem['ELEMENT_CNT'] == 0 && isset($sectionItem['UF_LINK'])) {
                 $empryLevel[] = $sectionItem;

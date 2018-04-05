@@ -33,7 +33,7 @@ if ($from_detail) {
     $code = $http_reffer[2];
     $sel_id = 0;
     \Bitrix\Main\Loader::includeModule('iblock');
-    $res = CIBlockElement::GetList(false, array('IBLOCK_ID'=>16, 'CODE'=>$code));
+    $res = CIBlockElement::GetList(false, array('IBLOCK_ID'=>CATALOG_ID, 'CODE'=>$code));
     if ($res->SelectedRowsCount() == 1) {
         $prod = $res->GetNext();
         $sel_id = $prod['ID'];
@@ -92,7 +92,7 @@ if (isset($_GET["SECTION_ID"])) {
 
     $sections = CIBlockSection::GetList(
         Array("SORT" => "ASC"),
-        Array("IBLOCK_ID" => 16, "ACTIVE" => "Y"),
+        Array("IBLOCK_ID" => CATALOG_ID, "ACTIVE" => "Y"),
         false,
         Array(),
         false
@@ -110,7 +110,7 @@ if (isset($_GET["SECTION_ID"])) {
 }
 
 $sectionCount = CIBlockElement::GetList(Array(),
-    Array("IBLOCK_ID" => 16,
+    Array("IBLOCK_ID" => CATALOG_ID,
         "SECTION_ID" => $sectionID,
         "INCLUDE_SUBSECTIONS" => "Y",
         "ACTIVE" => "Y"),
@@ -120,7 +120,7 @@ $sectionCount = CIBlockElement::GetList(Array(),
 
 <?
     $show = false;
-$a = CIBlockSection::GetNavChain(16, $sectionID);
+$a = CIBlockSection::GetNavChain(CATALOG_ID, $sectionID);
 while($r = $a->Fetch()) {
     if ($r['ID'] == 411) {
         $show = true;
