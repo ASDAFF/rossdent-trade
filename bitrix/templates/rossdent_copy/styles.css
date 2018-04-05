@@ -490,7 +490,6 @@ a.switch-btn.open .fa{
 	top: 0;
 	padding: 25px 20px;
 	line-height: 61px;
-	display: none;
 }
 .toggle-submenu img {
 	-webkit-transition: all 0.5s ease-in;

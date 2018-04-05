@@ -1,4 +1,5 @@
 <?
+/*
 $aMenuLinks = Array(
 	Array(
 		"О практик-центре", 
@@ -29,11 +30,12 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Галерея", 
+		"Галерея",
 		"/practic-centr/galery", 
 		Array(), 
 		Array(), 
 		"" 
 	)
 );
+*/
 ?>
