@@ -1,5 +1,4 @@
 <?
-/*
 $aMenuLinks = Array(
 	Array(
 		"О практик-центре", 
@@ -37,5 +36,5 @@ $aMenuLinks = Array(
 		"" 
 	)
 );
-*/
+
 ?>
