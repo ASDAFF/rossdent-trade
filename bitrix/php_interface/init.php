@@ -16,11 +16,10 @@ if($_POST){
     $introvertUrl = 'https://api.yadrocrm.ru/integration/site?key='. $intr_key;
 
     $cookieData = array();
-    if(isset($_COOKIE['introvert_cookie'])) {
-        $cookieData = json_decode($_COOKIE['introvert_cookie'], true) ?: array(); // данные сохраняемые js скриптом
-    }
+    $cookieData = $_COOKIE;
 
     $postArr = array_merge($cookieData, $_POST); // $_POST данные отправленной формы
+    
 // объединяем данные и отправляем
 
     if (function_exists('curl_init')) {
