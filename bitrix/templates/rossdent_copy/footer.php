@@ -68,5 +68,24 @@ $(function (){
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/37955640" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+<script type="text/javascript">
+    (function(d, w, k) {
+        w.introvert_callback = function() {
+            try {
+                w.II = new IntrovertIntegration(k);
+            } catch (e) {console.log(e)}
+        };
+
+        var n = d.getElementsByTagName("script")[0],
+            e = d.createElement("script");
+
+        e.type = "text/javascript";
+        e.async = true;
+        e.src = "https://api.yadrocrm.ru/js/cache/"+ k +".js";
+        n.parentNode.insertBefore(e, n);
+    })(document, window, 'ffe181a0');
+</script>
+123123
 </body>
 </html>
