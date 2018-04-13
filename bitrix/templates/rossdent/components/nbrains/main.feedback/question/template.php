@@ -11,6 +11,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
  */
 ?>
 <script src="<?=SITE_TEMPLATE_PATH?>/script/jquery.maskinput.js"></script>
+
 <section class="forms">
 
 	<div class="box">
@@ -57,7 +58,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 						<span class="mf-req">*</span>:
 					</div>
 					<div class="select-arrow">
-						<select name="THEME">
+						<select name="THEME" id="theme">
 							<option selected>Росс-Дент Трейд (заказ товара)</option>
 							<option>Практик-центр (мастер-классы)</option>
 							<option>Оборудование KaVo</option>
@@ -95,21 +96,30 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 						Вы представитель:
 					</div>
 					<div class="select-arrow">
-						<select name="PERSON">
+						<select name="PERSON" id="person">
 							<option selected>Госуд. /муниц. медицинское учреждение</option>
 							<option>Частное медицинское учреждение</option>
 							<option>Торговая организация</option>
-							<option>Другое (напишите в тексте сообщения)</option>
+							<option value="Другое">Другое (напишите в тексте сообщения)</option>
 						</select>
 					</div>
 				</div>
+
+
 
 				<div class="mf-name">
 					<div class="mf-text">
 						Регион
 						<span class="mf-req">*</span>:
 					</div>
-					<input type="text" name="REGION" value="<?=$arResult['REGION']?>">
+
+					<div class="select-arrow">
+						<select name="REGION">
+							<? foreach($arResult['REGION_AR'] as $k => $r):?>
+							<option <?=($k == 0) ? "selected" : ""?>><?=$r?></option>
+							<? endforeach; ?>
+						</select>
+					</div>
 				</div>
 
 				<div class="mf-name mb">
@@ -145,20 +155,59 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 					</div>
 				<?endif;?>
 
+				<input type="hidden" id="source" name="source" value="Заявка с сайта">
+				<input type="hidden" id="zapros" name="zapros" value="">
+				<input type="hidden" id="manager" name="manager" value="">
+				<input type="hidden" id="nolead" name="nolead" value="0">
+				<input type="hidden" id="status" name="status" value="17197705">
+				<input type="hidden" id="intr_group" name="intr_group" value="info@rossdent.ru;yaschenko@rossdent.ru;grydcina@rossdent.ru;bezus@rossdent.ru">
 
 				<input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
 				<input type="submit" name="submit" value="<?=GetMessage("MFT_SUBMIT")?>">
 			</form>
 
-
-
-
 		</div>
 
 	</div>
 
-
 </section>
+
 <script>
+	$(function(){
+
+		$('#theme').change(function(){
+
+			$('#nolead').val("0");
+			$('#manager').val("");
+			$('#zapros').val("");
+			$('#status').val("");
+			$('#intr_group').val("");
+
+			var field = $(this).val();
+			if(field == "Росс-Дент Трейд (заказ товара)"){
+				$('#status').val("17197705");
+				$('#intr_group').val("info@rossdent.ru;yaschenko@rossdent.ru;grydcina@rossdent.ru;bezus@rossdent.ru");
+			}
+			if(field == "Практик-центр (мастер-классы)"){
+				$('#status').val("18188902");
+				$('#intr_group').val("maximova@rossdent.ru;marina@rossdent.ru");
+			}
+			if(field == "Оборудование KaVo"){
+				$('#status').val("18188911");
+				$('#intr_group').val("sherer@rossdent.ru;a.akopyan@rossdent.ru;igor@rossdent.ru;balaev@rossdent.ru");
+			}
+			if(field == "Сервисные услуги"){
+				$('#nolead').val("1");
+				$('#manager').val("e.kravchenko@rossdent.ru");
+				$('#zapros').val("Сервисные услуги");
+			}
+			if(field == "Перезвоните мне/другое"){
+				$('#nolead').val("1");
+				$('#zapros').val("Перезвоните мне/другое");
+				$('#manager').val("e.kravchenko@rossdent.ru");
+			}
+		});
+
+	});
 	$("#phone").mask("+7 (999) 999 99 99");
 </script>
