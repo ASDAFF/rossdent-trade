@@ -78,7 +78,8 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 
 				<div class="mf-name">
 					<div class="mf-text">
-						Контактный e-mail:
+						Контактный e-mail
+						<span class="mf-req">*</span>:
 					</div>
 					<input type="text" name="EMAIL" value="<?=$arResult['EMAIL']?>">
 				</div>
