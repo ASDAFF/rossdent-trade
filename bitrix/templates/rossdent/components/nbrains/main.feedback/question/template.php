@@ -158,7 +158,6 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 				<input type="hidden" id="source" name="source" value="Заявка с сайта">
 				<input type="hidden" id="zapros" name="zapros" value="">
 				<input type="hidden" id="manager" name="manager" value="">
-				<input type="hidden" id="nolead" name="nolead" value="0">
 				<input type="hidden" id="status" name="status" value="17197705">
 				<input type="hidden" id="intr_group" name="intr_group" value="info@rossdent.ru;yaschenko@rossdent.ru;grydcina@rossdent.ru;bezus@rossdent.ru">
 
@@ -177,7 +176,8 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 
 		$('#theme').change(function(){
 
-			$('#nolead').val("0");
+
+			$('#nolead').remove();
 			$('#manager').val("");
 			$('#zapros').val("");
 			$('#status').val("");
@@ -197,14 +197,14 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 				$('#intr_group').val("sherer@rossdent.ru;a.akopyan@rossdent.ru;igor@rossdent.ru;balaev@rossdent.ru");
 			}
 			if(field == "Сервисные услуги"){
-				$('#nolead').val("1");
-				$('#manager').val("e.kravchenko@rossdent.ru");
+				$('<input type="hidden" id="nolead" name="nolead" value="1">').appendTo('.mfeedback form');
+				$('#manager').val("1994722");
 				$('#zapros').val("Сервисные услуги");
 			}
 			if(field == "Перезвоните мне/другое"){
-				$('#nolead').val("1");
+				$('<input type="hidden" id="nolead" name="nolead" value="1">').appendTo('.mfeedback form');
 				$('#zapros').val("Перезвоните мне/другое");
-				$('#manager').val("e.kravchenko@rossdent.ru");
+				$('#manager').val("1994722");
 			}
 		});
 

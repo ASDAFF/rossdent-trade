@@ -1,7 +1,7 @@
 <?php
 
 //Загрузка данных в amoCRM (by INTROVERT)
-if($_POST){
+if($_POST['NAME']){
 
     $intr_key = 'ffe181a0';
     $introvertUrl = 'https://api.yadrocrm.ru/integration/site?key='. $intr_key;
