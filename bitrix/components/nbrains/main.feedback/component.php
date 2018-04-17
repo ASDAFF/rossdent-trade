@@ -109,6 +109,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["submit"] <> '' && (!isset($_P
 			}
 			else
 			CEvent::Send($arParams["EVENT_NAME"], SITE_ID, $arFields);
+
+
+			if($_POST["EMAIL"]){
+				CEvent::Send("SEND_CLIENT_MAIL", SITE_ID, array("EMAIL" => $_POST["EMAIL"]));
+			}
+
 			LocalRedirect($APPLICATION->GetCurPageParam("success=".$arResult["PARAMS_HASH"], Array("success")));
 		}
 
