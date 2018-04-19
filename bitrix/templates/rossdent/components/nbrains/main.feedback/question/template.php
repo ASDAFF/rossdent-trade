@@ -160,7 +160,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 				<input type="hidden" id="zapros" name="zapros" value="">
 				<input type="hidden" id="lead_type" name="lead_type" value="Входящий">
 				<input type="hidden" id="status" name="status" value="17197705">
-				<input type="hidden" id="intr_group" name="intr_group" value="info@rossdent.ru;yaschenko@rossdent.ru;grydcina@rossdent.ru;bezus@rossdent.ru">
+				<!--<input type="hidden" id="intr_group" name="intr_group" value="info@rossdent.ru;yaschenko@rossdent.ru;grydcina@rossdent.ru;bezus@rossdent.ru">-->
 
 				<input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
 				<input type="submit" name="submit" value="<?=GetMessage("MFT_SUBMIT")?>">
@@ -181,30 +181,30 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 			$('#nolead').remove();
 			$('#zapros').val("");
 			$('#status').val("");
-			$('#intr_group').val("");
+			//$('#intr_group').val("");
 
 			var field = $(this).val();
 			if(field == "Росс-Дент Трейд (заказ товара)"){
 				$('#status').val("17197705");
-				$('#intr_group').attr("name","intr_group").val("info@rossdent.ru;yaschenko@rossdent.ru;grydcina@rossdent.ru;bezus@rossdent.ru");
+				//$('#intr_group').attr("name","intr_group").val("info@rossdent.ru;yaschenko@rossdent.ru;grydcina@rossdent.ru;bezus@rossdent.ru");
 			}
 			if(field == "Практик-центр (мастер-классы)"){
 				$('#status').val("18188902");
-				$('#intr_group').attr("name","intr_group").val("maximova@rossdent.ru;marina@rossdent.ru");
+				//$('#intr_group').attr("name","intr_group").val("maximova@rossdent.ru;marina@rossdent.ru");
 			}
 			if(field == "Оборудование KaVo"){
 				$('#status').val("18188911");
-				$('#intr_group').attr("name","intr_group").val("sherer@rossdent.ru;a.akopyan@rossdent.ru;igor@rossdent.ru;balaev@rossdent.ru");
+				//$('#intr_group').attr("name","intr_group").val("sherer@rossdent.ru;a.akopyan@rossdent.ru;igor@rossdent.ru;balaev@rossdent.ru");
 			}
 			if(field == "Сервисные услуги"){
 				$('<input type="hidden" id="nolead" name="nolead" value="1">').appendTo('.mfeedback form');
-				$('#intr_group').attr("name","manager").val("1994722");
+				//$('#intr_group').attr("name","manager").val("1994722");
 				$('#zapros').val("Сервисные услуги");
 			}
 			if(field == "Перезвоните мне/другое"){
 				$('<input type="hidden" id="nolead" name="nolead" value="1">').appendTo('.mfeedback form');
 				$('#zapros').val("Перезвоните мне/другое");
-				$('#intr_group').attr("name","manager").val("1994722");
+				//$('#intr_group').attr("name","manager").val("1994722");
 			}
 		});
 
