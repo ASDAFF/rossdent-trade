@@ -115,6 +115,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["submit"] <> '' && (!isset($_P
 				CEvent::Send("SEND_CLIENT_MAIL", SITE_ID, array("EMAIL" => $_POST["EMAIL"]));
 			}
 
+			require_once($_SERVER['DOCUMENT_ROOT'].'/introvert.php');
+
 			LocalRedirect($APPLICATION->GetCurPageParam("success=".$arResult["PARAMS_HASH"], Array("success")));
 		}
 

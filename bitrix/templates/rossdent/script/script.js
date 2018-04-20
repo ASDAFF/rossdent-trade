@@ -747,6 +747,8 @@ $(function () {
         telephone = $(this).find('input[name="telephone"]').val();
         tovar = $(this).find('input[name="tovar"]').val();
         rule = $(this).find('input[name="rule"]').is(':checked');
+        status = $(this).find('input[name="status"]').val();
+        info__name = $(this).find('input[name="info__name"]').val();
         tmpText = btn.val();
 
         if (!name || !telephone || !rule) {
@@ -764,7 +766,9 @@ $(function () {
                 'NAME': name,
                 'PHONE_NUMBER': telephone,
                 'TOVAR': tovar,
-                'RULE': rule
+                'RULE': rule,
+                'status': status,
+                'info__name': info__name
             },
             success: function (data) {
 				console.log(data);

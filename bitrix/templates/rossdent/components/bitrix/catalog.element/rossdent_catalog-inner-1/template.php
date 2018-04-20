@@ -215,6 +215,14 @@ if ($arResult['MIN_BASIS_PRICE']['CURRENCY'] !== 'RUB') {
                     <div class="info__colum-item ajax-fast-order">
                       <a class="btn-green btn-ico" style="background-image: url(/bitrix/templates/<? echo SITE_TEMPLATE_ID;?>/img/ico-phone.png);">Получить консультацию</a>
                       <form class="form-fast-order hidden" method="post">
+                        <? if($arResult['SECTION']['PATH'][0]['CODE'] == "master_klassy"): ?>
+                            <input type="hidden" name="status" id="status" value="18188902">
+                        <? else: ?>
+                            <input type="hidden" name="status" id="status" value="17197705">
+                        <? endif;?>
+
+                            <input type="hidden" name="info__name" id="info__name" value="">
+
                         <div class="btn-close">X</div>
                         <div class="btn-green">
                           <input class="input-box__input" type="hidden" name="tovar" value="<? echo "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>">

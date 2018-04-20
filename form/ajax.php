@@ -26,6 +26,8 @@ if (isset($_REQUEST['EVENT'])) {
         89 => $_REQUEST['TOVAR']         // Товар
       );
 
+      require_once($_SERVER['DOCUMENT_ROOT'].'/introvert_consult.php');
+
       $arLoadProductArray = Array(
         "MODIFIED_BY"    => 1, // элемент изменен текущим пользователем
         "IBLOCK_SECTION_ID" => false,       // элемент лежит в корне раздела

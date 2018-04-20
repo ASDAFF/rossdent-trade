@@ -12,11 +12,6 @@ function FunctionName(params)
 define("CATALOG_ID", 30);
 
 
-AddEventHandler("main", "OnPageStart", "MyOnBeforePrologHandler", 50);
-function MyOnBeforePrologHandler()
-{
-    require_once($_SERVER['DOCUMENT_ROOT'].'/introvert.php');
-}
 
 
 function GetRateFromCBR($CURRENCY)
