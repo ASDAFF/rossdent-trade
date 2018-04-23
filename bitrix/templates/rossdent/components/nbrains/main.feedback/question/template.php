@@ -156,6 +156,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 					</div>
 				<?endif;?>
 
+				<input type="hidden" id="info__name" name="info__name" value="">
 				<input type="hidden" id="source" name="source" value="Заявка с сайта">
 				<input type="hidden" id="zapros" name="zapros" value="">
 				<input type="hidden" id="lead_type" name="lead_type" value="Входящий">
