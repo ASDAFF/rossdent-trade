@@ -221,7 +221,7 @@ if ($arResult['MIN_BASIS_PRICE']['CURRENCY'] !== 'RUB') {
                             <input type="hidden" name="status" id="status" value="17197705">
                         <? endif;?>
 
-                            <input type="hidden" name="info__name" id="info__name" value="">
+                            <input type="hidden" name="info__name" id="info__name" value="http://prntscr.com/j9swms">
                             <input type="hidden" name="source" id="source" value="Заявка с сайта">
                             <input type="hidden" name="lead_type" id="lead_type" value="Входящий">
 
