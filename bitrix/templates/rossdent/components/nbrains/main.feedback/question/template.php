@@ -59,7 +59,8 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 					</div>
 					<div class="select-arrow">
 						<select name="THEME" id="theme">
-							<option selected>Росс-Дент Трейд (заказ товара)</option>
+							<option selected>не выбрано</option>
+							<option>Росс-Дент Трейд (заказ товара)</option>
 							<option>Практик-центр (мастер-классы)</option>
 							<option>Оборудование KaVo</option>
 							<option>Сервисные услуги</option>
