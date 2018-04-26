@@ -40,8 +40,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<img src="/images/icons/conversation.png">
 			</div>
 			<div class="f-body">
-				<div class="f-text">Задать</div>
-				<div class="f-text">Вопрос</div>
+				<div class="f-text">Оставить</div>
+				<div class="f-text">заявку</div>
 			</div>
 		</a>
 	</div>
