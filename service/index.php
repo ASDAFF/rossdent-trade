@@ -1,100 +1,87 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Сервис");
+$APPLICATION->SetPageProperty("description", "Базовые и продвинутые курсы по имплантации и протезированию на имплантатах для начинающих имплантологов и курсы повышения квалификации для практикующих имплантологов  в Краснодаре");
+$APPLICATION->SetPageProperty("keywords", "курсы для стоматологов, курсы для имплантологов, краснодар, ЮФО, практик-центр росс-дент, обучение стоматологов, обучение стоматологов краснодар, курсы стоматологов, имплантация");
+$APPLICATION->SetPageProperty("title", "Базовые и продвинутые курсы для стоматологов");
 $APPLICATION->SetTitle("Сервис");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:news", 
-	"flat1", 
-	array(
-		"COMPONENT_TEMPLATE" => "flat1",
-		"IBLOCK_TYPE" => "blog",
-		"IBLOCK_ID" => "27",
-		"NEWS_COUNT" => "6",
-		"USE_SEARCH" => "N",
-		"USE_RSS" => "N",
-		"USE_RATING" => "N",
-		"USE_CATEGORIES" => "N",
-		"USE_REVIEW" => "N",
-		"USE_FILTER" => "N",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_ORDER1" => "DESC",
-		"SORT_BY2" => "SORT",
-		"SORT_ORDER2" => "ASC",
-		"CHECK_DATES" => "Y",
-		"TEMPLATE_THEME" => "blue",
-		"SEF_MODE" => "Y",
+?>
+
+	<div class="about-us-block">
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<div class="about-us-block-title">
+					О сервис-центре
+				</div>
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "file",
+						"AREA_FILE_SUFFIX" => "inc",
+						"EDIT_TEMPLATE" => "",
+						"PATH" => "service.php"
+					)
+				);?>
+				<a href="/service/o-servis-tsentre/" class="btn-green-border" target="_blank">Подробнее </a>
+			</div>
+		</div>
+	</div>
+
+
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"rossdent_news-article",
+	Array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "36000000",
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
-		"SET_LAST_MODIFIED" => "N",
-		"SET_TITLE" => "Y",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-		"ADD_SECTIONS_CHAIN" => "Y",
-		"ADD_ELEMENT_CHAIN" => "Y",
-		"USE_PERMISSIONS" => "N",
-		"STRICT_SECTION_CHECK" => "N",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"CHECK_DATES" => "Y",
+		"COMPONENT_TEMPLATE" => "rossdent_news-article",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
+		"DISPLAY_NAME" => "Y",
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
-		"USE_SHARE" => "N",
-		"MEDIA_PROPERTY" => "",
-		"SLIDER_PROPERTY" => "",
-		"PREVIEW_TRUNCATE_LEN" => "",
-		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"LIST_FIELD_CODE" => array(
-			0 => "DETAIL_TEXT",
-			1 => "",
-		),
-		"LIST_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
-		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"DISPLAY_NAME" => "Y",
-		"META_KEYWORDS" => "-",
-		"META_DESCRIPTION" => "-",
-		"BROWSER_TITLE" => "NAME",
-		"DETAIL_SET_CANONICAL_URL" => "N",
-		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"DETAIL_FIELD_CODE" => array(
-			0 => "DETAIL_TEXT",
-			1 => "",
-		),
-		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
-		"DETAIL_DISPLAY_TOP_PAGER" => "N",
-		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
-		"DETAIL_PAGER_TITLE" => "Страница",
-		"DETAIL_PAGER_TEMPLATE" => "",
-		"DETAIL_PAGER_SHOW_ALL" => "Y",
-		"PAGER_TEMPLATE" => ".default",
 		"DISPLAY_TOP_PAGER" => "N",
-		"DISPLAY_BOTTOM_PAGER" => "Y",
-		"PAGER_TITLE" => "Сервис",
-		"PAGER_SHOW_ALWAYS" => "N",
+		"FIELD_CODE" => array(0=>"",1=>"",),
+		"FILTER_NAME" => "",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"IBLOCK_ID" => $_REQUEST["ID"],
+		"IBLOCK_TYPE" => "news",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"MESSAGE_404" => "",
+		"NEWS_COUNT" => "20",
+		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
-		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Новости",
+		"PARENT_SECTION" => "",
+		"PARENT_SECTION_CODE" => "",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"PROPERTY_CODE" => array(0=>"",1=>"",),
+		"SET_BROWSER_TITLE" => "N",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "N",
+		"SET_META_KEYWORDS" => "N",
 		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
-		"MESSAGE_404" => "",
-		"COMPOSITE_FRAME_MODE" => "A",
-		"COMPOSITE_FRAME_TYPE" => "AUTO",
-		"SEF_FOLDER" => "/service/",
-		"SEF_URL_TEMPLATES" => array(
-			"news" => "/service/",
-			"section" => "",
-			"detail" => "#ELEMENT_CODE#/",
-		)
-	),
-	false
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC"
+	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

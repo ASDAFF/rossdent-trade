@@ -79,7 +79,7 @@ $APPLICATION->IncludeComponent(
             "PATH" => "/include/basket.php"
           )
         );?>
-      
+
       <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
 	"rossdent_menu", 
@@ -265,7 +265,7 @@ $APPLICATION->IncludeComponent(
 <div class="box">
   <hr class="catalog__hr catalog__hr_left_mobile">
   <div class="catalog__header">
-     Практик-центр «Росс-Дент»
+  	<?=($APPLICATION->GetCurPage() == "/service/") ? "Сервис" : "Практик-центр";?> «Росс-Дент»
      <div class="header-social-links">
      <a href="https://business.facebook.com/RossDentPraktik/?business_id=485298995165602&ref=bookmarks " target="_blank"><img src="/images/icons/h_fb.png" alt="Facebook"></a>
      <a href="https://www.instagram.com/rossdentpraktik/" target="_blank"><img src="/images/icons/h_inst.png" alt="Instagram"></a>
@@ -273,19 +273,19 @@ $APPLICATION->IncludeComponent(
   </div>
 
   <div class="content-menu hidden-xs hidden-sm">
-<?$APPLICATION->IncludeComponent("bitrix:menu","practic_centr_menu",Array(
-        "ROOT_MENU_TYPE" => "content_menu", 
-        "MAX_LEVEL" => "1", 
-        "CHILD_MENU_TYPE" => "content_menu", 
-        "USE_EXT" => "Y",
-        "DELAY" => "N",
-        "ALLOW_MULTI_SELECT" => "Y",
-        "MENU_CACHE_TYPE" => "N", 
-        "MENU_CACHE_TIME" => "3600", 
-        "MENU_CACHE_USE_GROUPS" => "Y", 
-        "MENU_CACHE_GET_VARS" => "" 
-    )
-);?>
+		<?$APPLICATION->IncludeComponent("bitrix:menu","practic_centr_menu",Array(
+				"ROOT_MENU_TYPE" => "content_menu",
+				"MAX_LEVEL" => "1",
+				"CHILD_MENU_TYPE" => "content_menu",
+				"USE_EXT" => "Y",
+				"DELAY" => "N",
+				"ALLOW_MULTI_SELECT" => "Y",
+				"MENU_CACHE_TYPE" => "N",
+				"MENU_CACHE_TIME" => "3600",
+				"MENU_CACHE_USE_GROUPS" => "Y",
+				"MENU_CACHE_GET_VARS" => ""
+			)
+		);?>
   </div>
 
   <?
