@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Задать вопрос");
+$APPLICATION->SetTitle("Оставить заявку");
 ?><?$APPLICATION->IncludeComponent(
 	"nbrains:main.feedback", 
 	"question", 
