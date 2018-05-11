@@ -23,6 +23,9 @@ if(!is_array($css) || !in_array("/bitrix/css/main/font-awesome.css", $css))
 $strReturn .= '<div class="bx-breadcrumb">';
 
 $itemSize = count($arResult);
+if($itemSize < 2)
+	return "";
+
 for($index = 0; $index < $itemSize; $index++)
 {
 	$title = htmlspecialcharsex($arResult[$index]["TITLE"]);
