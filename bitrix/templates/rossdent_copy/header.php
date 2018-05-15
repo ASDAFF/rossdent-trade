@@ -265,7 +265,7 @@ $APPLICATION->IncludeComponent(
 <div class="box">
   <hr class="catalog__hr catalog__hr_left_mobile">
   <div class="catalog__header">
-  	<?=($APPLICATION->GetCurPage() == "/service/") ? "Сервис" : "Практик-центр";?> «Росс-Дент»
+  	<?=(preg_match('/service/',$APPLICATION->GetCurPage())) ? "Сервис" : "Практик-центр";?> «Росс-Дент»
      <div class="header-social-links">
      <a href="https://business.facebook.com/RossDentPraktik/?business_id=485298995165602&ref=bookmarks " target="_blank"><img src="/images/icons/h_fb.png" alt="Facebook"></a>
      <a href="https://www.instagram.com/rossdentpraktik/" target="_blank"><img src="/images/icons/h_inst.png" alt="Instagram"></a>
