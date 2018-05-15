@@ -1,33 +1,32 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"О сервис-центре",
-		"/service/o-servis-tsentre/",
+		"О нас", 
+		"/service/o-servis-tsentre/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Мобильный сервис",
-		"/service/mobilnyy-servis/",
+		"Мобильный сервис", 
+		"/service/mobilnyy-servis/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Сервисная служба",
-		"/service/servisnaya-sluzhba/",
+		"Сервисная служба", 
+		"/service/servisnaya-sluzhba/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Прайс",
-		"/service/prays/",
+		"Прайс", 
+		"/service/prays/", 
 		Array(), 
 		Array(), 
 		"" 
 	)
 );
-
 ?>
