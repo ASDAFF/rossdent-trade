@@ -212,8 +212,8 @@ if ($arResult['MIN_BASIS_PRICE']['CURRENCY'] !== 'RUB') {
                       <?endif?>
 
 		                </div>
-                    <div class="info__colum-item ajax-fast-order">
-                      <a class="btn-green btn-ico" style="background-image: url(/bitrix/templates/<? echo SITE_TEMPLATE_ID;?>/img/ico-phone.png);">Получить консультацию</a>
+                    <div class="info__colum-item"> <!--ajax-fast-order класс для открытия аякс формы-->
+                      <a href="/question/?<?=http_build_query(array("order_product" => 1,"name_product" => $arResult['NAME']));?>" class="btn-green btn-ico" style="background-image: url(/bitrix/templates/<? echo SITE_TEMPLATE_ID;?>/img/ico-phone.png);">Получить консультацию</a>
                       <form class="form-fast-order hidden" method="post">
                         <? if($arResult['SECTION']['PATH'][0]['CODE'] == "master_klassy"): ?>
                             <input type="hidden" name="status" id="status" value="18188902">

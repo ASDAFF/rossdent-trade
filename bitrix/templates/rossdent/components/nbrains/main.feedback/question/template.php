@@ -59,12 +59,21 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 					</div>
 					<div class="select-arrow">
 						<select name="THEME" id="theme">
-							<option selected>не выбрано</option>
-							<option>Росс-Дент Трейд (заказ товара)</option>
-							<option>Практик-центр (мастер-классы)</option>
-							<option>Оборудование KaVo</option>
-							<option>Сервисные услуги</option>
-							<option>Перезвоните мне/другое</option>
+							<? if($_REQUEST['order_product']): ?>
+								<option>не выбрано</option>
+								<option selected>Росс-Дент Трейд (заказ товара)</option>
+								<option>Практик-центр (мастер-классы)</option>
+								<option>Оборудование KaVo</option>
+								<option>Сервисные услуги</option>
+								<option>Перезвоните мне/другое</option>
+							<?else:?>
+								<option selected>не выбрано</option>
+								<option>Росс-Дент Трейд (заказ товара)</option>
+								<option>Практик-центр (мастер-классы)</option>
+								<option>Оборудование KaVo</option>
+								<option>Сервисные услуги</option>
+								<option>Перезвоните мне/другое</option>
+							<?endif;?>
 						</select>
 					</div>
 				</div>
@@ -136,7 +145,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 					<div class="mf-textarea">
 						Текст сообщения:
 					</div>
-					<textarea name="MESSAGE"><?=$arResult['MESSAGE']?></textarea>
+					<textarea name="MESSAGE"><? if($_REQUEST['name_product']): ?> Меня интересует - <?=$_REQUEST['name_product']?><?else:?><?=$arResult['MESSAGE']?><?endif;?></textarea>
 				</div>
 
 				<div class="mf-rule">
