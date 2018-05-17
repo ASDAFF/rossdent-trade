@@ -208,6 +208,11 @@ $APPLICATION->IncludeComponent(
 			  <?= tplvar('TOP_DESC', true);?>
 		  </div>
 
+		  <div class="top-city">
+			  г. Краснодар
+		  </div>
+
+
 		  <div class="number-phone-top">
 
 			<div class="mobile-number" onclick="$('.number-phone-top').toggleClass('active')">
