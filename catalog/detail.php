@@ -3,16 +3,18 @@ $APPLICATION->SetPageProperty("description", "Каталог стоматоло�
 $APPLICATION->SetPageProperty("keywords", "Инструменты для стоматолога, физиодеспансер, Остеопластический материал, Стоматологические расходные материалы, импланты, формирователи, абатмент, лабораторный аналог, парадонтологические инструменты  краснодар, curaprox, bonetrust, carl-martin, hu-friedy, osstem, botiss, NSK, шовные материалы, имплантационные системы");
 $APPLICATION->SetPageProperty("title", "Каталог стоматологического оборудования и инструментов ведущих мировых производителей");
 $APPLICATION->SetTitle("");?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.element",
-	"rossdent_catalog-inner-1",
-	Array(
+	"bitrix:catalog.element", 
+	"rossdent_catalog-inner-1", 
+	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_DETAIL_TO_SLIDER" => "N",
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
-		"ADD_TO_BASKET_ACTION" => array("ADD"),
+		"ADD_TO_BASKET_ACTION" => array(
+			0 => "ADD",
+		),
 		"BACKGROUND_IMAGE" => "-",
 		"BASKET_URL" => "/personal/cart/",
 		"BRAND_USE" => "N",
@@ -22,7 +24,7 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->IncludeComponent(
 		"CACHE_TYPE" => "N",
 		"CHECK_SECTION_ID_VARIABLE" => "N",
 		"COMPONENT_TEMPLATE" => "rossdent_catalog-inner-1",
-		"CONVERT_CURRENCY" => "N",
+		"CONVERT_CURRENCY" => "Y",
 		"DETAIL_PICTURE_MODE" => "IMG",
 		"DETAIL_URL" => "",
 		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
@@ -48,17 +50,29 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->IncludeComponent(
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
 		"OFFERS_LIMIT" => "0",
-		"OFFERS_PROPERTY_CODE" => array("PRODUCT_DIAM", "PRODUCT_LENGTH", ""),
+		"OFFERS_PROPERTY_CODE" => array(
+			0 => "PRODUCT_DIAM",
+			1 => "PRODUCT_LENGTH",
+			2 => "",
+		),
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => array("BASE","RETAIL"),
+		"PRICE_CODE" => array(
+			0 => "BASE",
+			1 => "USD",
+			2 => "EUR",
+		),
 		"PRICE_VAT_INCLUDE" => "Y",
 		"PRICE_VAT_SHOW_VALUE" => "N",
 		"PRODUCT_ID_VARIABLE" => "id",
-		"PRODUCT_PROPERTIES" => array(),
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PRODUCT_QUANTITY_VARIABLE" => "",
 		"PRODUCT_SUBSCRIPTION" => "N",
-		"PROPERTY_CODE" => array("",""),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"SECTION_CODE" => "",
 		"SECTION_CODE_PATH" => "",
 		"SECTION_ID" => $_REQUEST["SECTION_ID"],
@@ -88,8 +102,29 @@ $APPLICATION->SetTitle("");?><?$APPLICATION->IncludeComponent(
 		"USE_MAIN_ELEMENT_SECTION" => "N",
 		"USE_PRICE_COUNT" => "N",
 		"USE_PRODUCT_QUANTITY" => "Y",
-		"USE_VOTE_RATING" => "N"
-	)
+		"USE_VOTE_RATING" => "N",
+		"HIDE_NOT_AVAILABLE_OFFERS" => "N",
+		"STRICT_SECTION_CHECK" => "N",
+		"COMPOSITE_FRAME_MODE" => "A",
+		"COMPOSITE_FRAME_TYPE" => "AUTO",
+		"USE_GIFTS_DETAIL" => "Y",
+		"USE_GIFTS_MAIN_PR_SECTION_LIST" => "Y",
+		"GIFTS_DETAIL_PAGE_ELEMENT_COUNT" => "4",
+		"GIFTS_DETAIL_HIDE_BLOCK_TITLE" => "N",
+		"GIFTS_DETAIL_BLOCK_TITLE" => "Выберите один из подарков",
+		"GIFTS_DETAIL_TEXT_LABEL_GIFT" => "Подарок",
+		"GIFTS_SHOW_DISCOUNT_PERCENT" => "Y",
+		"GIFTS_SHOW_OLD_PRICE" => "Y",
+		"GIFTS_SHOW_NAME" => "Y",
+		"GIFTS_SHOW_IMAGE" => "Y",
+		"GIFTS_MESS_BTN_BUY" => "Выбрать",
+		"GIFTS_MAIN_PRODUCT_DETAIL_PAGE_ELEMENT_COUNT" => "4",
+		"GIFTS_MAIN_PRODUCT_DETAIL_HIDE_BLOCK_TITLE" => "N",
+		"GIFTS_MAIN_PRODUCT_DETAIL_BLOCK_TITLE" => "Выберите один из товаров, чтобы получить подарок",
+		"COMPATIBLE_MODE" => "Y",
+		"CURRENCY_ID" => "RUB"
+	),
+	false
 );?>
 
 <!-- Social -->

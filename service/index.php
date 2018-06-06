@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Сервис");
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
 				<div class="about-us-block-title">
-					О сервис-центре
+					О нас
 				</div>
 				<?$APPLICATION->IncludeComponent(
 					"bitrix:main.include",

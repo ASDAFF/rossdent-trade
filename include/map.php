@@ -12,15 +12,14 @@
 			<div class="map-box__title">
 				 Росс-дент трейд
 			</div>
-			 350004, г. Краснодар, ул. Котовского, 14
+			 350004, г. Краснодар, ул. Монтажников, 1/1
 			<hr class="map-box__hr">
 			<div class="map-box__grid">
 				<div class="map-box__text-block">
 					<div class="map-box__bold">
 						 Мобильный:
 					</div>
- <a href="tel:+79883695386">+7 (918) 068-02-43</a><br>
- <a href="tel:+79180680242">+7 (918) 068-02-42</a><br>
+ <a href="tel:+89883695386">+8 (988) 369-53-86</a><br>
 				</div>
 				<div class="map-box__text-block">
 					<div class="map-box__bold">
@@ -38,13 +37,13 @@
 					<div class="map-box__bold">
 						 E-mail
 					</div>
- <a href="mailto:rossdent-sklad@mail.ru">rossdent-sklad@mail.ru</a>
+ <a href="mailto:info@rossdent.ru">info@rossdent.ru</a>
 				</div>
 				<div class="map-box__text-block">
 					<div class="map-box__bold">
 						 Режим работы
 					</div>
-					 пн-пт: с 9:00 до 18:00<br>
+					 пн-пт: с 8:00 до 18:00<br>
 					 сб-вс – выходные
 				</div>
 			</div>
