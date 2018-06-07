@@ -230,7 +230,7 @@ $APPLICATION->IncludeComponent(
 				</li>
 				<li>
 					<a href="tel:<?= tplvar('PHONE_t2', true);?>">
-						<img src="/bitrix/templates/<?=SITE_TEMPLATE_ID?>/img/call.png" class="">
+						<img style="vertical-align: middle" src="/bitrix/templates/<?=SITE_TEMPLATE_ID?>/img/mail.png" class="">
 						<?= tplvar('PHONE_t2', true);?>
 					</a>
 				</li>
