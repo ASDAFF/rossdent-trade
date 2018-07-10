@@ -100,6 +100,7 @@ class CBXPunycode
 			self::$punycodePrefixUcs4 = $this->Utf8ToUcs4(self::$punycodePrefix);
 		}
 
+		var_dump(self::PREFIX);
 		if (self::$prefixUcs4 === null)
 			self::$prefixUcs4 = $this->Utf8ToUcs4(self::PREFIX);
 
