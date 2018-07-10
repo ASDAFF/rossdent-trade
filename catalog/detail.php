@@ -2,9 +2,12 @@
 $APPLICATION->SetPageProperty("description", "Каталог стоматологического оборудования и инструментов ведущих мировых производителей");
 $APPLICATION->SetPageProperty("keywords", "Инструменты для стоматолога, физиодеспансер, Остеопластический материал, Стоматологические расходные материалы, импланты, формирователи, абатмент, лабораторный аналог, парадонтологические инструменты  краснодар, curaprox, bonetrust, carl-martin, hu-friedy, osstem, botiss, NSK, шовные материалы, имплантационные системы");
 $APPLICATION->SetPageProperty("title", "Каталог стоматологического оборудования и инструментов ведущих мировых производителей");
-$APPLICATION->SetTitle("");?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.element", 
-	"rossdent_catalog-inner-1", 
+$APPLICATION->SetTitle("");?>
+
+
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.element",
+	"rossdent_catalog-inner-1",
 	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_DETAIL_TO_SLIDER" => "N",

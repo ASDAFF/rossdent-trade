@@ -481,4 +481,18 @@ if (!empty($arResult['ITEMS']))
 //   return $a['MIN_PRICE']['VALUE']>$b['MIN_PRICE']['VALUE'];
 // });
 
+
+
+foreach($arResult['ITEMS'] as &$arItem){
+	if(empty($arItem['PRICES'])){
+			$rsPrices = CPrice::GetList(array(),array('PRODUCT_ID' => $arItem['ID']));
+			if ($arPrice = $rsPrices->Fetch())
+			{
+				$convert_price = CCurrencyRates::ConvertCurrency($arPrice['PRICE'], $arPrice['CATALOG_GROUP_NAME'], 'RUB');
+				CPrice::SetBasePrice($arItem['ID'],$convert_price,'RUB');
+			}
+			$arItem['MIN_PRICE']['VALUE'] = $convert_price;
+	}
+}
+
 ?>
