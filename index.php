@@ -165,4 +165,24 @@ $APPLICATION->IncludeComponent(
                 Посмотреть продукцию
             </a>
         </div>
-    </section><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+    </section>
+
+	<section class="bottom-before-footer">
+		<div class="box">
+
+			<div class="reason__header">
+				Холдинг "Росс-Дент"
+			</div>
+
+			<a href="http://praktik.rossdent.ru/" class="btn-green-inline" target="_blank">
+				Практик-центр «Росс-Дент»
+			</a>
+			<a href="https://rossdent.ru/" class="btn-green-inline" target="_blank">
+				Сеть стоматологических клиник «Росс-Дент»
+			</a>
+
+		</div>
+	</section>
+
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
