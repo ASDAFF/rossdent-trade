@@ -1,5 +1,5 @@
 <div class="catalog__header">
-    О нас
+	 О нас
 </div>
 <p>
 	 В наше время невозможно представить себе работу врача-стоматолога без современного медицинского оборудования. Каждая стоматологическая клиника оснащена высокоточным оборудованием для повышения эффективности работы специалистов.<br>
@@ -9,7 +9,7 @@
  <span style="font-size: 16pt; color: #95be35;">Хотите избавиться от неудобств, связанных с обслуживанием и ремонтом вашего оборудования?<br>
 	 Сотрудничайте с «Росс-Дент» Сервис!</span><br>
 	 Компания Росс-Дент Трейд в мае 2018 года открыла новое направление: сервисную службу из квалифицированных специалистов-инженеров.<br>
-	 Наши квалифицированные инженеры работают только по лицензии и прошли сертификацию в компании KaVo. Мы работаем по договору, а это значит, что Вы можете быть спокойны. Все гарантии будут соблюдены. Компания Росс-Дент Трейд в мае 2018 года открыла новое направление: сервисную службу из квалифицированных специалистов-инженеров.
+	 Наши квалифицированные инженеры работают только по лицензии и прошли сертификацию в компании KaVo. Мы работаем по договору, а это значит, что Вы можете быть спокойны. Все гарантии будут соблюдены.&nbsp;
 </p>
 <p style="font-size: 16pt;">
  <b>Наши преимущества:</b>
@@ -35,23 +35,24 @@
 	 «Росс-Дент» Сервис производит ремонт оборудования компании KaVo и других производителей.<br>
 	 Работая с нами, Вы всегда будете идти в ногу со временем. <br>
 </p>
-<p> «Росс-Дент» Сервис – всегда на шаг ближе!</p> <br>
+<p>
+	 «Росс-Дент» Сервис – всегда на шаг ближе!
+</p>
  <br>
-<p style="font-size: 16pt;"> <b> Лицензии и сертификаты</b></p>
-
+ <br>
+<p style="font-size: 16pt;">
+ <b> Лицензии и сертификаты</b>
+</p>
 <div>
 	<p style="text-align: center;">
  <a href="/service/img/lic-1.jpg" target="_blank"></a>
 	</p>
 	<p style="text-align: center;">
-		<a href="/service/img/lic-1.pdf" target="_blank" style="float:left;"><img width="265" src="/service/img/lic-1.jpg" style="margin-right: 45px;"></a>
-		 <a href="/service/img/lic-2.pdf" target="_blank"><img width="265" src="/service/img/lic-2.jpg"></a>
+ <a href="/service/img/lic-1.pdf" target="_blank" style="float:left;"><img width="265" src="/service/img/lic-1.jpg" style="margin-right: 45px;"></a> <a href="/service/img/lic-2.pdf" target="_blank"><img width="265" src="/service/img/lic-2.jpg"></a>
 	</p>
 	<p style="text-align: center;">
  <a href="/service/img/lic-2.jpg" target="_blank"></a>
 	</p>
 </div>
-
- <br> 
-
+ <br>
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/Y2ZE2mMH1xc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

@@ -1,20 +1,20 @@
-2018-Jul-09 18:52:45 Наличие необходимых модулей php (check_php_modules): Ok
+2018-Sep-06 19:35:19 Наличие необходимых модулей php (check_php_modules): Ok
 Все необходимые модули установлены
-2018-Jul-09 18:52:45 Обязательные параметры PHP (check_php_settings): Ok
+2018-Sep-06 19:35:19 Обязательные параметры PHP (check_php_settings): Ok
 Настройки правильные
-2018-Jul-09 18:52:45 Модули веб-сервера (check_security): Ok
+2018-Sep-06 19:35:19 Модули веб-сервера (check_security): Ok
 Конфликтов не выявлено
-2018-Jul-09 18:52:45 Значения переменных сервера (check_server_vars): Ok
+2018-Sep-06 19:35:19 Значения переменных сервера (check_server_vars): Ok
 Корректные
-2018-Jul-09 18:52:45 Сохранение сессии (check_session): Ok
+2018-Sep-06 19:35:19 Сохранение сессии (check_session): Ok
 50% done
-2018-Jul-09 18:52:45 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+2018-Sep-06 19:35:19 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
 Правильные. Сайт работает в UTF кодировке
-2018-Jul-09 18:52:45 Служебные скрипты в корне сайта (check_install_scripts): Ok
+2018-Sep-06 19:35:19 Служебные скрипты в корне сайта (check_install_scripts): Ok
 Отсутствуют
-2018-Jul-09 18:52:46 Работа с сокетами (check_socket): Ok
+2018-Sep-06 19:35:20 Работа с сокетами (check_socket): Ok
 Connection to ssl://rossdent-trade.ru:443	Success
 
 Успешно
-2018-Jul-09 18:52:46 Выполнение агентов на cron (check_bx_crontab): Warning
+2018-Sep-06 19:35:20 Выполнение агентов на cron (check_bx_crontab): Warning
 Замечание. Агенты выполняются на хитах, рекомендуется перевести выполнение агентов на cron

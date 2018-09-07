@@ -8,7 +8,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Информация", 
+		"Новости", 
 		"/news/", 
 		Array(), 
 		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-7.png"), 
@@ -16,9 +16,16 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Сервис", 
-		"/service/",
+		"/service/", 
 		Array(), 
 		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-3.png"), 
+		"" 
+	),
+	Array(
+		"Каталог", 
+		"/catalog/", 
+		Array(), 
+		Array(), 
 		"" 
 	),
 	Array(

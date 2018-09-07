@@ -698,7 +698,7 @@ foreach($analog_count_id as $k => $v) {
 if(!$arResult['PRICES']['BASE']['VALUE']){
 
 	foreach($arResult['PRICES'] as $carency => $val){
-		$convert_price = CCurrencyRates::ConvertCurrency($val['VALUE'], $carency, 'RUB');
+		$convert_price = CCurrencyRates::ConvertCurrency($val['ORIG_VALUE_VAT'], $val['ORIG_CURRENCY'], 'RUB');
 	}
 	CPrice::SetBasePrice($arResult['ID'],$convert_price,'RUB');
 

@@ -4,9 +4,7 @@
     <div class="box">
         <hr class="catalog__hr">
         <div class="catalog__header">
-          <?if (isset($_GET["filter"]) && $_GET["filter"] == "articles") {
-            echo "Статьи";
-          } else {echo "Информация";}?>
+          <?=$arResult['NAME']?>
         </div>
         <div class="news-box">
             <?foreach($arResult['ITEMS'] as $arItem):?>
