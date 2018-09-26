@@ -91,16 +91,16 @@ $arUrlRewrite = array(
 		"PATH" => "/content/photo/index.php",
 	),
 	array(
-		"CONDITION" => "#^/brands/#",
-		"RULE" => "",
-		"ID" => "bitrix:news",
-		"PATH" => "/brands/index.php",
-	),
-	array(
 		"CONDITION" => "#^/account#",
 		"RULE" => "",
 		"ID" => "",
 		"PATH" => "/account.php",
+	),
+	array(
+		"CONDITION" => "#^/brands/#",
+		"RULE" => "",
+		"ID" => "bitrix:news",
+		"PATH" => "/brands/index.php",
 	),
 	array(
 		"CONDITION" => "#^/forum/#",

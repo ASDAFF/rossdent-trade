@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Бренды");
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	"brands",
+	"brands", 
 	array(
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -34,7 +34,7 @@ $APPLICATION->SetTitle("Бренды");
 		"DETAIL_PAGER_TEMPLATE" => "",
 		"DETAIL_PAGER_TITLE" => "Страница",
 		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
+			0 => "ID_BRAND",
 			1 => "",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
@@ -45,8 +45,8 @@ $APPLICATION->SetTitle("Бренды");
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "43",
-		"IBLOCK_TYPE" => "news",
+		"IBLOCK_ID" => "44",
+		"IBLOCK_TYPE" => "1c_catalog",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"LIST_FIELD_CODE" => array(
@@ -88,7 +88,7 @@ $APPLICATION->SetTitle("Бренды");
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
-		"COMPONENT_TEMPLATE" => "brends",
+		"COMPONENT_TEMPLATE" => "brands",
 		"FILE_404" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "/brands/",
