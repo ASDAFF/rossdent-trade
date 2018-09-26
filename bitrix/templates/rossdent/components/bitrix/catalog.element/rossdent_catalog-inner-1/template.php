@@ -280,6 +280,20 @@ if ($arResult['MIN_BASIS_PRICE']['CURRENCY'] !== 'RUB') {
 		            <?=$arResult['DETAIL_TEXT']?>
 		          </p>
               <?endif?>
+                <? if($arResult['PROPERTIES']['CML2_MANUFACTURER']['VALUE']):
+
+                  $params = array(
+                      "max_len" => "100",
+                      "change_case" => "L",
+                      "replace_space" => "-",
+                      "replace_other" => "-",
+                      "delete_repeat_replace" => "true",
+                      "use_google" => "false",
+                  );
+                  ?>
+                    <br>
+                    Бренд: <a href="/brands/<?=CUtil::translit($arResult['PROPERTIES']['CML2_MANUFACTURER']['VALUE'], "ru", $params)?>/" class="" style="text-decoration: none;color: black;font-weight: 700;"><?=$arResult['PROPERTIES']['CML2_MANUFACTURER']['VALUE'];?></a>
+                <? endif; ?>
 		      </div>
 		    </section>
 <?endif?>

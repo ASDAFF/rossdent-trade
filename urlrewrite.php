@@ -55,16 +55,16 @@ $arUrlRewrite = array(
 		"PATH" => "/reviews/detail.php",
 	),
 	array(
-		"CONDITION" => "#^/courses/schedule/#",
-		"RULE" => "",
-		"ID" => "bitrix:news",
-		"PATH" => "/courses/schedule/index.php",
-	),
-	array(
 		"CONDITION" => "#^/media/([\\w\\d-_]+)#",
 		"RULE" => "ELEMENT_CODE=\$1&\$2",
 		"ID" => "",
 		"PATH" => "/media/detail.php",
+	),
+	array(
+		"CONDITION" => "#^/courses/schedule/#",
+		"RULE" => "",
+		"ID" => "bitrix:news",
+		"PATH" => "/courses/schedule/index.php",
 	),
 	array(
 		"CONDITION" => "#^/news/([\\w\\d-_]+)#",
@@ -95,6 +95,12 @@ $arUrlRewrite = array(
 		"RULE" => "",
 		"ID" => "",
 		"PATH" => "/account.php",
+	),
+	array(
+		"CONDITION" => "#^/brands/#",
+		"RULE" => "",
+		"ID" => "bitrix:news",
+		"PATH" => "/brands/index.php",
 	),
 	array(
 		"CONDITION" => "#^/forum/#",

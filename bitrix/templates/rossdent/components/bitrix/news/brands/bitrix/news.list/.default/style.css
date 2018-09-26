@@ -1,0 +1,34 @@
+.brands .item-brand {
+	margin-right: 8px;
+	margin-bottom: 8px;
+	border: 2px solid #e6e6e6;
+	width: 175px;
+	height: 180px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.brands .item-brand a{
+	text-decoration: none;
+}
+
+.brands .img-brand {
+	height: 130px;
+	line-height: 130px;
+	text-align: center;
+}
+
+.brands .img-brand img {
+	max-width: 160px;
+	max-height: 125px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.brands .name-brand {
+	height: 50px;
+	line-height: 50px;
+	background: #e6e6e6;
+	color: #333;
+	text-align: center;
+}

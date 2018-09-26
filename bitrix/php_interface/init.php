@@ -33,8 +33,8 @@ function GetRateFromCBR($CURRENCY)
                {
                   $charset = Trim($matches[1]);
                }
-         $strQueryText = eregi_replace("<!DOCTYPE[^>]{1,}>", "", $strQueryText);
-         $strQueryText = eregi_replace("<"."\?XML[^>]{1,}\?".">", "", $strQueryText);
+         $strQueryText = preg_replace("<!DOCTYPE[^>]{1,}>", "", $strQueryText);
+         $strQueryText = preg_replace("<"."\?XML[^>]{1,}\?".">", "", $strQueryText);
          $strQueryText = $APPLICATION->ConvertCharset($strQueryText, $charset, SITE_CHARSET);
 
          require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/xml.php");
@@ -415,6 +415,17 @@ array(
 
 function CatalogPriceUpdate() {
 
+}
+
+
+function priceDiscount($id){
+    global $USER;
+    $ar_res_price = CCatalogProduct::GetOptimalPrice($id, 1, $USER->GetUserGroupArray(), 'N');
+    if($ar_res_price['DISCOUNT_PRICE']){
+        return $ar_res_price['DISCOUNT_PRICE'];
+    }else{
+        return false;
+    }
 }
 
 
