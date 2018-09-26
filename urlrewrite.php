@@ -43,16 +43,16 @@ $arUrlRewrite = array(
 		"PATH" => "/catalog/list.php",
 	),
 	array(
-		"CONDITION" => "#^/courses/([\\w\\d-_]+)#",
-		"RULE" => "ELEMENT_CODE=\$1&\$2",
-		"ID" => "",
-		"PATH" => "/courses/detail.php",
-	),
-	array(
 		"CONDITION" => "#^/reviews/([\\w\\d-_]+)#",
 		"RULE" => "ID=\$1&\$2",
 		"ID" => "",
 		"PATH" => "/reviews/detail.php",
+	),
+	array(
+		"CONDITION" => "#^/courses/([\\w\\d-_]+)#",
+		"RULE" => "ELEMENT_CODE=\$1&\$2",
+		"ID" => "",
+		"PATH" => "/courses/detail.php",
 	),
 	array(
 		"CONDITION" => "#^/media/([\\w\\d-_]+)#",
@@ -67,16 +67,16 @@ $arUrlRewrite = array(
 		"PATH" => "/courses/schedule/index.php",
 	),
 	array(
-		"CONDITION" => "#^/news/([\\w\\d-_]+)#",
-		"RULE" => "ELEMENT_CODE=\$1&\$2",
-		"ID" => "",
-		"PATH" => "/news/detail.php",
-	),
-	array(
 		"CONDITION" => "#^/content/gallery/#",
 		"RULE" => "",
 		"ID" => "bitrix:photogallery_user",
 		"PATH" => "/content/gallery/index.php",
+	),
+	array(
+		"CONDITION" => "#^/news/([\\w\\d-_]+)#",
+		"RULE" => "ELEMENT_CODE=\$1&\$2",
+		"ID" => "",
+		"PATH" => "/news/detail.php",
 	),
 	array(
 		"CONDITION" => "#^/frezernyy-centr#",
@@ -91,16 +91,16 @@ $arUrlRewrite = array(
 		"PATH" => "/content/photo/index.php",
 	),
 	array(
-		"CONDITION" => "#^/account#",
-		"RULE" => "",
-		"ID" => "",
-		"PATH" => "/account.php",
-	),
-	array(
 		"CONDITION" => "#^/brands/#",
 		"RULE" => "",
 		"ID" => "bitrix:news",
 		"PATH" => "/brands/index.php",
+	),
+	array(
+		"CONDITION" => "#^/account#",
+		"RULE" => "",
+		"ID" => "",
+		"PATH" => "/account.php",
 	),
 	array(
 		"CONDITION" => "#^/forum/#",
