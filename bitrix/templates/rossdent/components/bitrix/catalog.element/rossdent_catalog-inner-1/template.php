@@ -280,19 +280,17 @@ if ($arResult['MIN_BASIS_PRICE']['CURRENCY'] !== 'RUB') {
 		            <?=$arResult['DETAIL_TEXT']?>
 		          </p>
               <?endif?>
-                <? if($arResult['PROPERTIES']['CML2_MANUFACTURER']['VALUE']):
+                <? if($arResult['PROPERTIES']['CML2_MANUFACTURER']['ID']):
 
-                  $params = array(
-                      "max_len" => "100",
-                      "change_case" => "L",
-                      "replace_space" => "-",
-                      "replace_other" => "-",
-                      "delete_repeat_replace" => "true",
-                      "use_google" => "false",
-                  );
-                  ?>
-                    <br>
-                    Бренд: <a href="/brands/<?=CUtil::translit($arResult['PROPERTIES']['CML2_MANUFACTURER']['VALUE'], "ru", $params)?>/" class="" style="text-decoration: none;color: black;font-weight: 700;"><?=$arResult['PROPERTIES']['CML2_MANUFACTURER']['VALUE'];?></a>
+                $arSelect = Array("ID", "IBLOCK_ID", "NAME", "CODE");
+                $arFilter = Array("IBLOCK_ID" => 44, "ACTIVE"=>"Y","PROPERTY_ID_BRAND" => $arResult['PROPERTIES']['CML2_MANUFACTURER']['VALUE_ENUM_ID']);
+                $res = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter, false, false, $arSelect);
+                  if($ob = $res->GetNextElement()):
+                    $arFields = $ob->GetFields();
+                    ?>
+                      <br>
+                      Бренд: <a href="/brands/<?=$arFields['CODE']?>/" class="" style="text-decoration: none;color: black;font-weight: 700;"><?=$arResult['PROPERTIES']['CML2_MANUFACTURER']['VALUE'];?></a>
+                  <? endif; ?>
                 <? endif; ?>
 		      </div>
 		    </section>
