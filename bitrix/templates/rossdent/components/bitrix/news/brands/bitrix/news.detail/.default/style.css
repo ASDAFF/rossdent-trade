@@ -66,3 +66,17 @@
 .piicsl .piicsl-item:hover .piicsl-img img {
 	transform: scale(1.2) rotate(-2deg);
 }
+
+@media only screen and (max-width: 1000px){
+	.piicsl .piicsl-item {
+		width: 49%;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.piicsl .piicsl-item {
+		width: 99%;
+	}
+}
+
+
