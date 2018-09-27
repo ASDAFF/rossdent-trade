@@ -11,10 +11,15 @@ while($ob = $res->GetNextElement()){
     $arResult['ITEMS'][$arFields['ID']]['PRICE'] = priceDiscount($arFields['ID']);
     $arProps = $ob->GetProperties();
     $arResult['ITEMS'][$arFields['ID']]['PROPERTIES'] = $arProps;
-
-    $arSections['ID'][$arFields['IBLOCK_SECTION_ID']] = $arFields['IBLOCK_SECTION_ID'];
 }
 $arResult['PAGES'] = (ceil($res->SelectedRowsCount()/24));
+
+
+$res_sec = CIBlockElement::GetList(Array("SORT" => "ASC"), array("IBLOCK_ID" => CATALOG_ID, "ACTIVE"=>"Y","PROPERTY_CML2_MANUFACTURER" => array("ID" => $brand_id)), false, false, array("ID", "IBLOCK_ID", "NAME","DETAIL_PAGE_URL"));
+while($ob_sec = $res_sec->GetNextElement()){
+    $arFieldsSec = $ob_sec->GetFields();
+    $arSections['ID'][$arFieldsSec['IBLOCK_SECTION_ID']] = $arFieldsSec['IBLOCK_SECTION_ID'];
+}
 
 
 foreach($arSections['ID'] as $section){
