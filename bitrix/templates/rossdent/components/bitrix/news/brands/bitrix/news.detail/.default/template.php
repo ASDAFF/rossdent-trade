@@ -25,7 +25,7 @@
 		<ul class="piicsl">
 			<? foreach($arResult['SECTIONS'] as $section):?>
 			<li class="piicsl-item">
-				<a href="<?=$section['SECTION_PAGE_URL']?>">
+				<a href="<?=substr($section['SECTION_PAGE_URL'],0,-1)?>">
 					<div class="piicsl-img">
 						<img src="<?=($section['PICTURE']) ? CFile::GetPath($section["PICTURE"]) : '/bitrix/templates/rossdent/img/no_image.jpg';?>">
 					</div>
