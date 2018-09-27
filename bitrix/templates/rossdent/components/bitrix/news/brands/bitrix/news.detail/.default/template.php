@@ -20,6 +20,23 @@
 </section>
 
 
+<section class="catalog">
+	<div class="box">
+		<ul class="piicsl">
+			<? foreach($arResult['SECTIONS'] as $section):?>
+			<li class="piicsl-item">
+				<a href="<?=$section['SECTION_PAGE_URL']?>">
+					<div class="piicsl-img">
+						<img src="<?=($section['PICTURE']) ? CFile::GetPath($section["PICTURE"]) : '/bitrix/templates/rossdent/img/no_image.jpg';?>">
+					</div>
+					<span class="piicsl-title"><?=$section['NAME']?></span>
+				</a>
+			</li>
+			<? endforeach; ?>
+		</ul>
+	</div>
+</section>
+
 <section id="catalog-view" class="catalog-view">
 	<div class="box">
 
