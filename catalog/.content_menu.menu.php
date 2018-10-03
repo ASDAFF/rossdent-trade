@@ -17,7 +17,7 @@ $aMenuLinksExt = $APPLICATION->IncludeComponent(
 	)
 );
 
-$aMenuLinksExt[] = array(
+array_unshift($aMenuLinksExt,array(
 	"Бренды",
 	"/brands/",
 	array("/brands/"),
@@ -26,6 +26,7 @@ $aMenuLinksExt[] = array(
 		"IS_PARENT" => false,
 		"DEPTH_LEVEL" => 1
 	)
-);
+));
+
 $aMenuLinks = array_merge($aMenuLinks, $aMenuLinksExt);
 ?>
