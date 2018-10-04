@@ -44,7 +44,6 @@ $strSectionEdit = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_EDIT");
 $strSectionDelete = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_DELETE");
 $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM'));
 ?>
-
 <section class="catalog">
 	<div class="box">
 		<hr class="catalog__hr">
@@ -56,7 +55,7 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 			<? foreach ($arResult['SECTIONS'] as &$arSection):?>
 
 				<li class="piicsl-item">
-					<a href="<?=$arSection['SECTION_PAGE_URL']?>">
+					<a href="<?=($arSection['CODE'] == 'brands') ? '/'.$arSection['CODE'].'/' : $arSection['SECTION_PAGE_URL']?>">
 						<div class="piicsl-img">
 							<img src="<?=$arSection['PICTURE']['SRC']?>">
 						</div>
