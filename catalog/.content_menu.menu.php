@@ -17,5 +17,16 @@ $aMenuLinksExt = $APPLICATION->IncludeComponent(
 	)
 );
 
+array_unshift($aMenuLinksExt,array(
+	"Бренды",
+	"/brands/",
+	array("/brands/"),
+	array(
+		"FROM_IBLOCK" => true,
+		"IS_PARENT" => false,
+		"DEPTH_LEVEL" => 1
+	)
+));
+
 $aMenuLinks = array_merge($aMenuLinks, $aMenuLinksExt);
 ?>

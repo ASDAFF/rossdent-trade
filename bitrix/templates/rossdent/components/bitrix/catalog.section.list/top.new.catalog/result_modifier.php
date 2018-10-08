@@ -96,4 +96,12 @@ if (0 < $arResult['SECTIONS_COUNT'])
 		}
 	}
 }
+
+if(!$arResult['SECTION']['DEPTH_LEVEL']){
+	$res = CIBlock::GetByID(44);
+	if($ar_res = $res->GetNext()){
+		$arResult['BRAND'] = $ar_res;
+	}
+}
+
 ?>

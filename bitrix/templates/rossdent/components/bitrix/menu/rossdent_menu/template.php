@@ -17,9 +17,9 @@
                 <?else:?>
                     <?if ($arItem["PERMISSION"] > "D"):?>
                         <?if ($arItem["DEPTH_LEVEL"] == 1):?>
-                            <a href="<?=($arItem["LINK"] == '/catalog/brands') ? '/brands/' : $arItem["LINK"]?>" class="<?if ($arItem["SELECTED"]):?>menu__item--active menu__item<?else:?>menu__item<?endif?>"><img class="menu__item-img" src="<?=$arItem['PARAMS']['LNK_IMG']?>"><span class="menu__item-text"><?=$arItem["TEXT"]?></span></a>
+                            <a href="<?=$arItem["LINK"]?>" class="<?if ($arItem["SELECTED"]):?>menu__item--active menu__item<?else:?>menu__item<?endif?>"><img class="menu__item-img" src="<?=$arItem['PARAMS']['LNK_IMG']?>"><span class="menu__item-text"><?=$arItem["TEXT"]?></span></a>
                         <?else:?>
-                            <a href="<?=($arItem["LINK"] == '/catalog/brands') ? '/brands/' : $arItem["LINK"]?>" class=" menu__item"><span class="menu__item-text"><?=$arItem["TEXT"]?></span></a>
+                            <a href="<?=$arItem["LINK"]?>" class=" menu__item"><span class="menu__item-text"><?=$arItem["TEXT"]?></span></a>
                         <?endif?>
                     <?else:?>
                         <?if ($arItem["DEPTH_LEVEL"] == 1):?>

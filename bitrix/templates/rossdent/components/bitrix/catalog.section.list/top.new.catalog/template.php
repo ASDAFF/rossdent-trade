@@ -52,10 +52,22 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 		</div>
 
 		<ul class="piicsl">
+
+			<?if(is_array($arResult['BRAND'])): ?>
+			<li class="piicsl-item">
+				<a href="/<?=$arResult['BRAND']['CODE']?>/">
+					<div class="piicsl-img">
+						<img src="<?=CFile::GetPath($arResult['BRAND']['PICTURE'])?>">
+					</div>
+					<span class="piicsl-title"><?=$arResult['BRAND']['NAME']?></span>
+				</a>
+			</li>
+			<? endif;?>
+
 			<? foreach ($arResult['SECTIONS'] as &$arSection):?>
 
 				<li class="piicsl-item">
-					<a href="<?=($arSection['CODE'] == 'brands') ? '/'.$arSection['CODE'].'/' : $arSection['SECTION_PAGE_URL']?>">
+					<a href="<?=$arSection['SECTION_PAGE_URL']?>">
 						<div class="piicsl-img">
 							<img src="<?=$arSection['PICTURE']['SRC']?>">
 						</div>
