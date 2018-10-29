@@ -50,7 +50,9 @@ if ($arResult['MIN_BASIS_PRICE']['CURRENCY'] !== 'RUB') {
             </div>
 
               <?elseif(isset($arResult['DETAIL_PICTURE']['SRC']) || strlen($arResult['DETAIL_PICTURE']['SRC']) > 0):?>
-              <img class="product-detail__img" src="<?=$arResult['DETAIL_PICTURE']['SRC']?>" alt="">
+              <a href="<?=$arResult['DETAIL_PICTURE']['SRC']?>" class="product-detail_fancybox_img">
+                <img class="product-detail__img" src="<?=$arResult['DETAIL_PICTURE']['SRC']?>" alt="">
+              </a>
               <?else:?>
               <img class="product-detail__img" src="/bitrix/templates/rossdent/img/no_image.jpg" alt="">
               <?endif?>
@@ -168,7 +170,9 @@ if ($arResult['MIN_BASIS_PRICE']['CURRENCY'] !== 'RUB') {
                     <div class="swiper-pagination"></div>
                 </div>
                   <?elseif(isset($arResult['DETAIL_PICTURE']['SRC']) || strlen($arResult['DETAIL_PICTURE']['SRC']) > 0):?>
-                  <img class="product-detail__img" src="<?=$arResult['DETAIL_PICTURE']['SRC']?>" alt="">
+                  <a href="<?=$arResult['DETAIL_PICTURE']['SRC']?>" class="product-detail_fancybox_img">
+                    <img class="product-detail__img" src="<?=$arResult['DETAIL_PICTURE']['SRC']?>" alt="">
+                  </a>
                   <?else:?>
                   <img class="product-detail__img" src="/bitrix/templates/rossdent/img/no_image.jpg" alt="">
                   <?endif?>

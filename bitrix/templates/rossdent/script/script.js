@@ -1050,3 +1050,10 @@ $(function () {
      $(this).toggleClass("open");
    });
 })
+
+$(function(){
+    $(".product-detail_fancybox_img").fancybox({
+        openEffect	: 'elastic',
+        closeEffect	: 'elastic',
+    });
+})
