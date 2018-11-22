@@ -79,6 +79,12 @@ $arUrlRewrite = array(
 		"PATH" => "/news/detail.php",
 	),
 	array(
+		"CONDITION" => "#^/articles/([\\w\\d-_]+)#",
+		"RULE" => "ELEMENT_CODE=\$1&\$2",
+		"ID" => "",
+		"PATH" => "/articles/detail.php",
+	),
+	array(
 		"CONDITION" => "#^/frezernyy-centr#",
 		"RULE" => "",
 		"ID" => "",

@@ -50,6 +50,13 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+		"Статьи",
+		"/articles/",
+		Array(),
+		Array("LNK_IMG"=>"/bitrix/templates/rossdent/img/menu-5.png"),
+		""
+	),
+	Array(
 		"Контакты", 
 		"/contacts/", 
 		Array(), 

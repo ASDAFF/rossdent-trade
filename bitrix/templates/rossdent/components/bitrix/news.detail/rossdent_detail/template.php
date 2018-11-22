@@ -52,7 +52,7 @@
             <?=$arResult['DETAIL_TEXT']?>
         </div>
         <a class="news-text__show-all js-show-more-text">Показать полное описание</a>
-        <a href="/news/" class="btn-green-border">К списку новостей</a>
+        <a href="<?=$arParams['IBLOCK_URL']?>" class="btn-green-border">К списку</a>
     </div>
 </section>
 
@@ -71,7 +71,7 @@
       <?endif?>
         </div>
         <a class="news-text__show-all js-show-more-text">Показать полное описание</a>
-        <a href="/news/" class="btn-green-border">К списку новостей</a>
+            <a href="<?=$arParams['IBLOCK_URL']?>" class="btn-green-border">К списку</a>
     </div>
 </section>
 
