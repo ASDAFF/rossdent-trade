@@ -109,6 +109,17 @@ if (isset($_GET["SECTION_ID"])) {
     }
 }
 
+if($_REQUEST['BRAND']){
+    $arSelect = Array("ID", "IBLOCK_ID", "NAME", "PREVIEW_TEXT");
+    $arFilter = Array("IBLOCK_ID" => 44, "ACTIVE" => "Y", "PROPERTY_ID_BRAND" => $_REQUEST['BRAND']);
+    $res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
+    if($ob = $res->GetNextElement()){
+        $arFields = $ob->GetFields();
+        $sectionTitle = "";
+        $sectionDescription = $arFields['~PREVIEW_TEXT'];
+    }
+}
+
 $sectionCount = CIBlockElement::GetList(Array(),
     Array("IBLOCK_ID" => CATALOG_ID,
         "SECTION_ID" => $sectionID,
