@@ -112,6 +112,7 @@ if (isset($_GET["SECTION_ID"])) {
 $sectionCount = CIBlockElement::GetList(Array(),
     Array("IBLOCK_ID" => CATALOG_ID,
         "SECTION_ID" => $sectionID,
+        "PROPERTY_CML2_MANUFACTURER" => strip_tags($_REQUEST['BRAND']),
         "INCLUDE_SUBSECTIONS" => "Y",
         "ACTIVE" => "Y"),
     Array()

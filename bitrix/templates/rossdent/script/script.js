@@ -654,7 +654,7 @@ new Swiper('.orders-slider', {
 var counter_click = 1;
 $(function () {
     //путь к файлу с компонентом. Указываем параметр
-    var path = "/include/catalog_list.php?ajax=Y" + location.search;
+    var path = "/include/catalog_list.php?ajax=Y" + location.search.replace(/\?/,"&");
     //счетчик страниц
     var currentPage = 1;
 

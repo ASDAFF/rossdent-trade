@@ -55,6 +55,10 @@ if ($_GET['sort'] == 'price') {
 }
 $filterOrder = isset($_GET['order']) ? $_GET['order'] : 'asc';
 
+if($brand = strip_tags($_REQUEST['BRAND'])){
+    global $arrFilter;
+    $arrFilter['PROPERTY_CML2_MANUFACTURER'] = $brand;
+}
 
 $APPLICATION->IncludeComponent(
     "bitrix:catalog.section",

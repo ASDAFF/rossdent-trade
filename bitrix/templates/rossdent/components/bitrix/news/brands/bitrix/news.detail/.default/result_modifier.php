@@ -27,4 +27,5 @@ foreach($arSections['ID'] as $section){
     if($ar_res = $res->GetNext())
         $arResult['SECTIONS'][$section] = $ar_res;
 }
+$arResult["ID_BRAND"] = $brand_id;
 
