@@ -4,6 +4,8 @@
 <head>
 <meta name="yandex-verification" content="c2b6da56b4ce7b9e" />
 <meta name="google-site-verification" content="QFfxf_EeKnqwELFQKXagkmcEMrbAgLoxhbpOPxHgkN4" />
+<meta name="google-site-verification" content="BFKJ2HRUwBUuog_EcsRInLeS1PCFhJC0Kb3EYk74ySI" />
+
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
